@@ -1,12 +1,11 @@
+// create context menus
+/*
+ * IP
+ */
+
 browser.contextMenus.create({
-    id: "copy link save as clipboard",
-    title:"copy link to clipboard",
-    contexts:["link"],
+    id: "IP",
+    title: "IP",
+    contexts:["selection", "link", "image", "video", "audio"]
 });
-browser.contextMenus.onClicked.addListener((info, tab) => {
-    if(info.menuItemId === "copy-link-to-clipboard"){
-        const text = "This is text:" + info.linkUrl;
-        const safeUrl = escapeHTML(info.linkUrl);
-        const html = 'This is HTML: <a href="${safeUrl}">${safeUrl}</a>';
-    }
-})
+

@@ -4,25 +4,15 @@
     "version":"1.0",
     "description":"This is some IOC research tool with contextmenus",
     "icons":{
-        "16":"icons/16.png",
-        "48":"icons/48.png",
-        "128":"icons/128.png"
+        "48":"icons/48.png"
     },
-
-    "content_scripts":[
-        {
-            "matches":["<all_urls>"],
-            "js":["content.js"]
-        }
-    ],
 
     "permissions":[
         "contextMenus",
-        "notifications",
-        "storage",
-        "clipboardWrite",
-        "https://www.virustotal.com/vtapi/v2/*",
-        "https;//urlscan.io/api/v1/*"
-
-    ]
+        "menus",
+        "clipboardWrite"
+    ],
+    "background":{
+        "scripts":["background.js"]
+    }
 }
