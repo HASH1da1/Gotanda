@@ -12,5 +12,7 @@ Right click highlighted IOC strings, It will show contextmenus.
 
 When You want to search using some engine, You choose one of list.
 
+## Other
 
+**This extension is optimized for the Japanese environment.**
 
