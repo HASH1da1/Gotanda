@@ -2,7 +2,7 @@
     "manigfest_version":2,
     "name":"Gotanda",
     "version":"1.0",
-    "description":"This is some IOC research tool with contextmenus",
+    "description":"Gotanda is for myself or yourself Firefox Web Extension.",
     "icons":{
         "48":"icons/48.png"
     },
