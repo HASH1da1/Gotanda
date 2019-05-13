@@ -180,3 +180,23 @@ browser.contextMenus.create({
 //create empty variables
 var url = "";
 var artifact = "";
+
+
+// when you click event listener function
+
+
+browser.contextMenus.onClicked.addListener((info, tab) => {
+    if (info.selectionText){
+        artifact = String(info.selectionText).trim();
+    } else if (info.linkURL){
+        var link = new URL(info.linkURL);
+        artifact = link.host;
+    } else if (info.srcURL);
+        var src = new URL(info.srcURL);
+        artifact = src.host;
+} 
+
+switch (info.menItemId){
+    //IP
+    case 
+}
