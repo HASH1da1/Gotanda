@@ -142,12 +142,6 @@ browser.contextMenus.create({
     parentID: "SNS"
 });
 
-browser.contextMenus.create({
-    id:"gitlab",
-    title:"GitLab",
-    contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
-});
 
 browser.contextMenus.create({
     id:"facebook",
@@ -202,5 +196,88 @@ switch (info.menuItemId){
     case "abuseIPDB":
         url = "https://www.abusipdb.com/check"+artifact;
         break;
+    
+    case "hackertarget IP":
+        url = "https://api.hacketarget.com/reverseiplookup/?q="+artifatct;
+        break;
+    
+    case "censys IP":
+        url = "https://censys.io/ipv4/"+artifact;
+        break;
+    
+    case "shodan":
+        url = "https://www.shodan.io/host/"+artifact;
+        break;
+    
+    case "fofa":
+        url = "https://fofa.so/result?qbase64="+window.btoa(aritfact);
+        break;
 
+    case "virtutoal IP":
+        url = "https://virustotal.com/#/ip-address/"+artifact;
+        break;
+    //Domain
+
+    case "censys domain":
+        url = "https://censys.io/domain?q="+artifact;
+        break;
+    
+    case "shodan domain":
+        url = "https://www.shodan.io/search?query="+artifact;
+        break;
+
+    case "domain watch":
+        url = "https://domainwat.ch/site/"+artifact;
+        break;
+    
+    case "virustotal domain":
+        url = "https://virustotal.com/#/domain/"+artifact;
+        break;
+    //URL
+
+    case "URL scan":
+        url = "https://urlscan.io/";
+        break;
+
+    case "hacker target":
+        url = "https://hackertarget.com/extract-links/";
+        break;
+
+    case "virustotal URL":
+        url ="https://virustotal.com/#/home/url";
+        break;
+
+    //SNS
+
+    case "twitter":
+        url = "https://twitter.com/"+artifact;
+        break;
+
+    case "qiita":
+        url = "hhtps://qiita.com/"+artifact;
+        break;
+
+    case "github":
+        url = "https://github.com/"+artifact;
+        break;
+
+    case "facebook":
+        url = "https://www.facebook.com/public/"+artifact;
+        break;
+    
+    case "instagram":
+        url = "https://www.instagram.com/"+artifact;
+        break;
+
+    case "linkedin":
+        url = "https://www.linkedin.com/in/"+artifact;
+        break;
+
+    case "jusyodepon":
+        url = "https://jpon.xyz/index.php?q="+artifact+"&path=2012";
+        break;
 }
+browser.tabs.create({url: url});
+
+navigator.clipboard.writeText(artifact);
+});
