@@ -186,17 +186,21 @@ var artifact = "";
 
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
-    if (info.selectionText){
+    // strip leading and trailing spaces
+    if (info.selectionText) {
         artifact = String(info.selectionText).trim();
-    } else if (info.linkURL){
-        var link = new URL(info.linkURL);
+    } else if (info.linkUrl) {
+        var link = new URL(info.linkUrl);
         artifact = link.host;
-    } else if (info.srcURL);
-        var src = new URL(info.srcURL);
+    } else if (info.srcUrl) {
+        var src = new URL(info.srcUrl);
         artifact = src.host;
-} 
+    }
 
-switch (info.menItemId){
+switch (info.menuItemId){
     //IP
-    case 
+    case "abuseIPDB":
+        url = "https://www.abusipdb.com/check"+artifact;
+        break;
+
 }
