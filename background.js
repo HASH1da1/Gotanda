@@ -10,42 +10,42 @@ browser.contextMenus.create({
     id:"abuseIPDB",
     title:"AbuseIPDB",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "IP"
+    parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"hackertarget IP",
     title:"HackerTarget",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "IP"
+    parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"censys IP",
     title:"Censys",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "IP"
+    parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"shodan",
     title:"Shodan IP",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "IP"
+    parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"fofa",
     title:"FOFA IP",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "IP"
+    parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"virustotal",
     title:"VirusTotal IP",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "IP"
+    parentId: "IP"
 });
 
 // create Domain search context menus
@@ -60,28 +60,28 @@ browser.contextMenus.create({
     id:"censys Domain",
     title:"Censys",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "Domain"
+    parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"shodan Domain",
     title:"Shodan",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "Domain"
+    parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"domainwatch",
     title:"DomainWatch",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "Domain"
+    parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"virustotal Domain",
     title:"VirusTotal",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "Domain"
+    parentId: "Domain"
 });
 
 // create URL search context menus
@@ -96,21 +96,16 @@ browser.contextMenus.create({
     id:"urlscan",
     title:"URLscan",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "URL"
+    parentId: "URL"
 });
 
-browser.contextMenus.create({
-    id:"hackertarget",
-    title:"HackerTarget",
-    contexts:["selection", "link", "image","video", "audio"],
-    parentID: "URL"
-});
+
 
 browser.contextMenus.create({
     id:"virustotal URL",
     title:"VirusTotal",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "URL"
+    parentId: "URL"
 });
 
 //create SNS search context menus
@@ -125,21 +120,21 @@ browser.contextMenus.create({
     id:"twitter",
     title:"Twitter",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"qiita",
     title:"Qiita",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"github",
     title:"Github",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 
@@ -147,28 +142,28 @@ browser.contextMenus.create({
     id:"facebook",
     title:"FaceBook",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"instagram",
     title:"Instagram",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"linkedin",
     title:"LinkedIn",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"jusyodepon",
     title:"住所でポン",
     contexts:["selection", "link", "image","video", "audio"],
-    parentID: "SNS"
+    parentId: "SNS"
 });
 
 //create empty variables
@@ -194,11 +189,11 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
 switch (info.menuItemId){
     //IP
     case "abuseIPDB":
-        url = "https://www.abusipdb.com/check"+artifact;
+        url = "https://www.abuseipdb.com/check/"+artifact;
         break;
     
     case "hackertarget IP":
-        url = "https://api.hacketarget.com/reverseiplookup/?q="+artifatct;
+        url = "https://api.hackertarget.com/reverseiplookup/?q="+artifact;
         break;
     
     case "censys IP":
@@ -210,37 +205,33 @@ switch (info.menuItemId){
         break;
     
     case "fofa":
-        url = "https://fofa.so/result?qbase64="+window.btoa(aritfact);
+        url = "https://fofa.so/result?qbase64="+window.btoa(artifact);
         break;
 
-    case "virtutoal IP":
+    case "virustotal":
         url = "https://virustotal.com/#/ip-address/"+artifact;
         break;
     //Domain
 
-    case "censys domain":
+    case "censys Domain":
         url = "https://censys.io/domain?q="+artifact;
         break;
     
-    case "shodan domain":
+    case "shodan Domain":
         url = "https://www.shodan.io/search?query="+artifact;
         break;
 
-    case "domain watch":
+    case "domainwatch":
         url = "https://domainwat.ch/site/"+artifact;
         break;
     
-    case "virustotal domain":
+    case "virustotal Domain":
         url = "https://virustotal.com/#/domain/"+artifact;
         break;
     //URL
 
-    case "URL scan":
+    case "urlscan":
         url = "https://urlscan.io/";
-        break;
-
-    case "hacker target":
-        url = "https://hackertarget.com/extract-links/";
         break;
 
     case "virustotal URL":
@@ -254,7 +245,7 @@ switch (info.menuItemId){
         break;
 
     case "qiita":
-        url = "hhtps://qiita.com/"+artifact;
+        url = "https://qiita.com/"+artifact;
         break;
 
     case "github":
@@ -274,7 +265,7 @@ switch (info.menuItemId){
         break;
 
     case "jusyodepon":
-        url = "https://jpon.xyz/index.php?q="+artifact+"&path=2012";
+        url = "https://jpon.xyz/";
         break;
 }
 browser.tabs.create({url: url});

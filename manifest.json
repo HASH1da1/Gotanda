@@ -1,5 +1,5 @@
 {
-    "manigfest_version":2,
+    "manifest_version": 2,
     "name":"Gotanda",
     "version":"1.0",
     "description":"Gotanda is for myself or yourself Firefox Web Extension.",
@@ -8,9 +8,9 @@
     },
 
     "permissions":[
+        "clipboardWrite",
         "contextMenus",
-        "menus",
-        "clipboardWrite"
+        "menus"
     ],
     "background":{
         "scripts":["background.js"]
