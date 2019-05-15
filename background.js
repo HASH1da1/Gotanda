@@ -1,3 +1,18 @@
+// create Whois context menus
+
+browser.contextMenus.create({
+    id: "whois",
+    title: "whois",
+    contexts:["selection", "link"]
+});
+
+browser.contextMenus.create({
+    id: "domaintools whois",
+    title: "Domain Tools",
+    contexts:["selection", "link"],
+    parentId: "whois"
+});
+
 // create IP address context menus
 
 browser.contextMenus.create({
@@ -48,12 +63,7 @@ browser.contextMenus.create({
     parentId: "IP"
 });
 
-browser.contextMenus.create({
-    id: "domaintools whois",
-    title: "Domain Tools",
-    contexts:["selection", "link"],
-    parentId: "IP"
-})
+
 
 // create Domain search context menus
 
@@ -118,7 +128,39 @@ browser.contextMenus.create({
     title: "Wayback Machine",
     contexts: ["selection", "link"],
     parentId: "URL"
-})
+});
+
+
+//create Vulnerability context menus
+browser.contextMenus.create({
+    id: "Vuln",
+    title: "Vuln",
+    contexts:["selection", "link"]
+});
+
+browser.contextMenus.create({
+    id: "fortiguard",
+    title: "FortiGuard CVE",
+    contexts:["selection", "link"],
+    parentId: "Vuln"
+});
+
+browser.contextMenus.create({
+    id: "sploitus",
+    title: "Sploitus",
+    contexts:["selection", "link"],
+    parentId: "Vuln"
+});
+
+browser.contextMenus.create({
+    id: "vulmon",
+    title:"Vulmon",
+    contexts:["selection", "link"],
+    parentId: "Vuln"
+});
+
+
+
 
 //create SNS search context menus
 
@@ -200,6 +242,10 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     }
 
 switch (info.menuItemId){
+    //whois
+    case "domaintools whois":
+        url = "https://whois.domaintools.com/"+artifact;
+        break;
     //IP
     case "abuseIPDB":
         url = "https://www.abuseipdb.com/check/"+artifact;
@@ -225,9 +271,7 @@ switch (info.menuItemId){
         url = "https://virustotal.com/#/ip-address/"+artifact;
         break;
 
-    case "domaintools whois":
-        url = "https://whois.domaintools.com/"+artifact;
-        break;
+
     //Domain
 
     case "censys Domain":
@@ -259,6 +303,20 @@ switch (info.menuItemId){
         url = "https://web.archive.org/web/*/"+artifact;
         break;
 
+
+    //Vuln
+
+    case "fortiguard":
+        url = "https://fortiguard.com/search?q="+artifact+"&engine=3";
+        break;
+
+    case "sploitus":
+        url = "https://sploitus.com/?query="+artifact+"#exploits";
+        break;
+
+    case "vulmon":
+        url = "https://vulmon.com/searchpage?q="+artifact;
+        break;
     //SNS
 
     case "twitter":
