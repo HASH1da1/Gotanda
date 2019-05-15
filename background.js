@@ -48,6 +48,13 @@ browser.contextMenus.create({
     parentId: "IP"
 });
 
+browser.contextMenus.create({
+    id: "domaintools whois",
+    title: "Domain Tools",
+    contexts:["selection", "link", "image", "video", "audio"],
+    parentId: "IP"
+})
+
 // create Domain search context menus
 
 browser.contextMenus.create({
@@ -210,6 +217,10 @@ switch (info.menuItemId){
 
     case "virustotal":
         url = "https://virustotal.com/#/ip-address/"+artifact;
+        break;
+
+    case "domaintools whois":
+        url = "https://whois.domaintools.com/"+artifact;
         break;
     //Domain
 
