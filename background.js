@@ -172,6 +172,13 @@ browser.contextMenus.create({
 });
 
 browser.contextMenus.create({
+    id: "pinterest",
+    title: "Pinterest",
+    contexts:["selection", "link"],
+    parentId: "SNS"
+})
+
+browser.contextMenus.create({
     id:"jusyodepon",
     title:"住所でポン",
     contexts:["selection", "link"],
@@ -282,6 +289,10 @@ switch (info.menuItemId){
 
     case "linkedin":
         url = "https://www.linkedin.com/in/"+artifact;
+        break;
+
+    case "pinterest":
+        url = "https://www.pinterest.jp/"+artifact;
         break;
 
     case "jusyodepon":
