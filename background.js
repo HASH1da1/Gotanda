@@ -3,55 +3,55 @@
 browser.contextMenus.create({
     id: "IP",
     title: "IP",
-    contexts:["selection", "link", "image", "video", "audio"]
+    contexts:["selection", "link"]
 });
 
 browser.contextMenus.create({
     id:"abuseIPDB",
     title:"AbuseIPDB",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"hackertarget IP",
     title:"HackerTarget",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"censys IP",
     title:"Censys",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"shodan",
     title:"Shodan IP",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"fofa",
     title:"FOFA IP",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"virustotal",
     title:"VirusTotal IP",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id: "domaintools whois",
     title: "Domain Tools",
-    contexts:["selection", "link", "image", "video", "audio"],
+    contexts:["selection", "link"],
     parentId: "IP"
 })
 
@@ -60,34 +60,34 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     id: "Domain",
     title: "Domain",
-    contexts:["selection", "link", "image", "video", "audio"]
+    contexts:["selection", "link"]
 });
 
 browser.contextMenus.create({
     id:"censys Domain",
     title:"Censys",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"shodan Domain",
     title:"Shodan",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"domainwatch",
     title:"DomainWatch",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"virustotal Domain",
     title:"VirusTotal",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "Domain"
 });
 
@@ -96,13 +96,13 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     id: "URL",
     title: "URL",
-    contexts: ["selection", "link", "image", "video", "audio"]
+    contexts: ["selection", "link"]
 });
 
 browser.contextMenus.create({
     id:"urlscan",
     title:"URLscan",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "URL"
 });
 
@@ -111,7 +111,7 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     id:"virustotal URL",
     title:"VirusTotal",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "URL"
 });
 
@@ -120,27 +120,27 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     id: "SNS",
     title: "SNS",
-    contexts:["selection", "link", "image", "video", "audio"]
+    contexts:["selection", "link"]
 });
 
 browser.contextMenus.create({
     id:"twitter",
     title:"Twitter",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"qiita",
     title:"Qiita",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"github",
     title:"Github",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
@@ -148,28 +148,28 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     id:"facebook",
     title:"FaceBook",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"instagram",
     title:"Instagram",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"linkedin",
     title:"LinkedIn",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
 browser.contextMenus.create({
     id:"jusyodepon",
     title:"住所でポン",
-    contexts:["selection", "link", "image","video", "audio"],
+    contexts:["selection", "link"],
     parentId: "SNS"
 });
 
