@@ -106,14 +106,19 @@ browser.contextMenus.create({
     parentId: "URL"
 });
 
-
-
 browser.contextMenus.create({
     id:"virustotal URL",
     title:"VirusTotal",
     contexts:["selection", "link"],
     parentId: "URL"
 });
+
+browser.contextMenus.create({
+    id: "archive",
+    title: "Wayback Machine",
+    contexts: ["selection", "link"],
+    parentId: "URL"
+})
 
 //create SNS search context menus
 
@@ -247,6 +252,10 @@ switch (info.menuItemId){
 
     case "virustotal URL":
         url ="https://virustotal.com/#/home/url";
+        break;
+
+    case "archive":
+        url = "https://web.archive.org/web/*/"+artifact;
         break;
 
     //SNS
