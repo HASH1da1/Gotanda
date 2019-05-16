@@ -290,15 +290,15 @@ switch (info.menuItemId){
         url = "https://virustotal.com/#/domain/"+artifact;
         break;
     //URL
-
+/*
     case "urlscan":
-        url = "https://urlscan.io/";
+        url = "https://urlscan.io/api/v1/search/?q=domain:"+artifact;
         break;
 
     case "virustotal URL":
         url ="https://virustotal.com/#/home/url";
         break;
-
+*/
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;
