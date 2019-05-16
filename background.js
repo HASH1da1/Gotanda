@@ -115,14 +115,14 @@ browser.contextMenus.create({
     contexts:["selection", "link"],
     parentId: "URL"
 });
-
+/*
 browser.contextMenus.create({
     id:"virustotal URL",
     title:"VirusTotal",
     contexts:["selection", "link"],
     parentId: "URL"
 });
-
+*/
 browser.contextMenus.create({
     id: "archive",
     title: "Wayback Machine",
@@ -296,7 +296,7 @@ switch (info.menuItemId){
         break;
 /*
     case "virustotal URL":
-        url ="https://virustotal.com/#/home/url";
+        url ="https://virustotal.com/#/home/url/"+artifact;
         break;
 */
     case "archive":
