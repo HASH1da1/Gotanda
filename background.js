@@ -239,7 +239,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     } else if (info.srcUrl) {
         var src = new URL(info.srcUrl);
         artifact = src.host;
-    }
+    } 
 
 switch (info.menuItemId){
     //whois
@@ -290,11 +290,11 @@ switch (info.menuItemId){
         url = "https://virustotal.com/#/domain/"+artifact;
         break;
     //URL
-/*
+
     case "urlscan":
         url = "https://urlscan.io/api/v1/search/?q=domain:"+artifact;
         break;
-
+/*
     case "virustotal URL":
         url ="https://virustotal.com/#/home/url";
         break;
