@@ -166,7 +166,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "SNS",
-    title: "SNS",
+    title: "SNS Account",
     contexts:["selection", "link"]
 });
 
