@@ -44,5 +44,5 @@ When You want to search using some engine, You choose one of list.
 
 **This extension is optimized for the Japanese environment.**
 
-Gotanda means "got and a" in Japanese "得る".
+Gotanda(got and a) means "得る" in Japanese.
 
