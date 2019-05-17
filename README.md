@@ -6,6 +6,8 @@ This Web Extension could search OSINT information from some IOC.(IP,Domain,URL,S
 
 This Repository partly the studying and JavaScript practice.
 
+Download [here](https://addons.mozilla.org/ja/firefox/addon/gotanda/ "here").
+
 ## Usage
 
 Right click highlighted IOC strings, It will show contextmenus.
