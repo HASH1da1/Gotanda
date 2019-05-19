@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name":"Gotanda",
-    "version":"1.0",
+    "version":"1.1",
     "description":"Gotanda is for myself or yourself Firefox Web Extension.",
     "icons":{
         "128":"icons/icon128.png"
