@@ -1,6 +1,8 @@
 # Gotanda is OSINT extension
+[README-JP](README/README_JP.md "JP") 
 
-Gotanda is for myself or yourself Firefox Web Extension.
+
+Gotanda is for myself Firefox Web Extension.
 
 This Web Extension could search OSINT information from some IOC.(IP,Domain,URL,SNS...etc)
 
@@ -46,5 +48,5 @@ SNS category is only account search.(without Time Line search)
 
 **This extension is optimized for the Japanese environment.**
 
-Gotanda(got and a) means "得る" in Japanese.
+Got and a 
 
