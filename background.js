@@ -8,7 +8,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "domaintools whois",
-    title: "Domain Tools",
+    title: "Domain Tools(e.g. hoge.com)",
     contexts:["selection", "link"],
     parentId: "whois"
 });
@@ -23,42 +23,42 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"abuseIPDB",
-    title:"AbuseIPDB",
+    title:"AbuseIPDB(e.g. x.x.x.x)",
     contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"hackertarget IP",
-    title:"HackerTarget",
+    title:"HackerTarget(e.g. x.x.x.x)",
     contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"censys IP",
-    title:"Censys",
+    title:"Censys(e.g. x.x.x.x)",
     contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"shodan",
-    title:"Shodan IP",
+    title:"Shodan IP(e.g. x.x.x.x)",
     contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"fofa",
-    title:"FOFA IP",
+    title:"FOFA IP(e.g. x.x.x.x)",
     contexts:["selection", "link"],
     parentId: "IP"
 });
 
 browser.contextMenus.create({
     id:"virustotal",
-    title:"VirusTotal IP",
+    title:"VirusTotal IP(e.g. x.x.x.x)",
     contexts:["selection", "link"],
     parentId: "IP"
 });
@@ -75,28 +75,28 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"censys Domain",
-    title:"Censys",
+    title:"Censys(e.g hoge.com)",
     contexts:["selection", "link"],
     parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"shodan Domain",
-    title:"Shodan",
+    title:"Shodan(e.g. hoge.com)",
     contexts:["selection", "link"],
     parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"domainwatch",
-    title:"DomainWatch",
+    title:"DomainWatch(e.g hoge.com)",
     contexts:["selection", "link"],
     parentId: "Domain"
 });
 
 browser.contextMenus.create({
     id:"virustotal Domain",
-    title:"VirusTotal",
+    title:"VirusTotal(e.g. hoge.com)",
     contexts:["selection", "link"],
     parentId: "Domain"
 });
@@ -111,7 +111,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"urlscan",
-    title:"URLscan",
+    title:"URLscan(e.g. hxxp://hoge.com/)",
     contexts:["selection", "link"],
     parentId: "URL"
 });
@@ -125,7 +125,7 @@ browser.contextMenus.create({
 */
 browser.contextMenus.create({
     id: "archive",
-    title: "Wayback Machine",
+    title: "Wayback Machine(e.g. hxxp://hoge.com)",
     contexts: ["selection", "link"],
     parentId: "URL"
 });
@@ -140,23 +140,37 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "fortiguard",
-    title: "FortiGuard CVE",
+    title: "FortiGuard CVE(e.g. cve-20xx-xxx)",
     contexts:["selection", "link"],
     parentId: "Vuln"
 });
 
 browser.contextMenus.create({
     id: "sploitus",
-    title: "Sploitus",
+    title: "Sploitus(e.g. cve-20xx-xxx,, service name)",
     contexts:["selection", "link"],
     parentId: "Vuln"
 });
 
 browser.contextMenus.create({
     id: "vulmon",
-    title:"Vulmon",
+    title:"Vulmon(e.g. cve-20xx-xxx)",
     contexts:["selection", "link"],
     parentId: "Vuln"
+});
+
+// Create Malicious Software Search context menus
+browser.contextMenus.create({
+    id: "malware",
+    title: "Malware",
+    contexts:["selection", "link"]
+});
+
+browser.contextMenus.create({
+    id: "malshare",
+    title: "Malshare(MD5)",
+    contexts:["selection", "link"],
+    parentId: "malware"
 });
 
 
@@ -317,6 +331,13 @@ switch (info.menuItemId){
     case "vulmon":
         url = "https://vulmon.com/searchpage?q="+artifact;
         break;
+
+
+    //Malware
+    case "malshare":
+        url = "https://malshare.com/search.php?query="+artifact;
+        break;
+
     //SNS
 
     case "twitter":
