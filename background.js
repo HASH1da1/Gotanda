@@ -10,7 +10,10 @@ browser.contextMenus.create({
     id: "domaintools whois",
     title: "Domain Tools(e.g. hoge.com)",
     contexts:["selection", "link"],
-    parentId: "whois"
+    parentId: "whois",
+    icons: {
+        "16": "icons/icon/domaintools.png"
+    }
 });
 
 // create IP address context menus
@@ -25,42 +28,60 @@ browser.contextMenus.create({
     id:"abuseIPDB",
     title:"AbuseIPDB(e.g. x.x.x.x)",
     contexts:["selection", "link"],
-    parentId: "IP"
+    parentId: "IP",
+    icons: {
+        "16": "icons/icon/abuseipdb.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"hackertarget IP",
     title:"HackerTarget(e.g. x.x.x.x)",
     contexts:["selection", "link"],
-    parentId: "IP"
+    parentId: "IP",
+    icons: {
+        "16": "icons/icon/hackertarget.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"censys IP",
     title:"Censys(e.g. x.x.x.x)",
     contexts:["selection", "link"],
-    parentId: "IP"
+    parentId: "IP",
+    icons: {
+        "16": "icons/icon/censys.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"shodan",
     title:"Shodan IP(e.g. x.x.x.x)",
     contexts:["selection", "link"],
-    parentId: "IP"
+    parentId: "IP",
+    icons: {
+        "16": "icons/icon/shodan.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"fofa",
     title:"FOFA IP(e.g. x.x.x.x)",
     contexts:["selection", "link"],
-    parentId: "IP"
+    parentId: "IP",
+    icons:{
+        "16": "icons/icon/fofa.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"virustotal",
     title:"VirusTotal IP(e.g. x.x.x.x)",
     contexts:["selection", "link"],
-    parentId: "IP"
+    parentId: "IP",
+    icons:{
+        "16": "icons/icon/virustotal.png"
+    }
 });
 
 
@@ -77,28 +98,40 @@ browser.contextMenus.create({
     id:"censys Domain",
     title:"Censys(e.g hoge.com)",
     contexts:["selection", "link"],
-    parentId: "Domain"
+    parentId: "Domain",
+    icons: {
+        "16": "icons/icon/censys.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"shodan Domain",
     title:"Shodan(e.g. hoge.com)",
     contexts:["selection", "link"],
-    parentId: "Domain"
+    parentId: "Domain",
+    icons: {
+        "16": "icons/icon/shodan.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"domainwatch",
     title:"DomainWatch(e.g hoge.com)",
     contexts:["selection", "link"],
-    parentId: "Domain"
+    parentId: "Domain",
+    icons: {
+        "16": "icons/icon/domainwatch.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"virustotal Domain",
     title:"VirusTotal(e.g. hoge.com)",
     contexts:["selection", "link"],
-    parentId: "Domain"
+    parentId: "Domain",
+    icons: {
+        "16": "icons/icon/virustotal.png"
+    }
 });
 
 // create URL search context menus
@@ -113,7 +146,10 @@ browser.contextMenus.create({
     id:"urlscan",
     title:"URLscan(e.g. hxxp://hoge.com/)",
     contexts:["selection", "link"],
-    parentId: "URL"
+    parentId: "URL",
+    icons: {
+        "16": "icons/icon/urlscan.png"
+   }
 });
 /*
 browser.contextMenus.create({
@@ -127,7 +163,10 @@ browser.contextMenus.create({
     id: "archive",
     title: "Wayback Machine(e.g. hxxp://hoge.com)",
     contexts: ["selection", "link"],
-    parentId: "URL"
+    parentId: "URL",
+    icons: {
+        "16": "icons/icon/archive.png"
+    }
 });
 
 
@@ -142,21 +181,30 @@ browser.contextMenus.create({
     id: "fortiguard",
     title: "FortiGuard CVE(e.g. cve-20xx-xxx)",
     contexts:["selection", "link"],
-    parentId: "Vuln"
+    parentId: "Vuln",
+    icons: {
+        "16": "icons/icon/fortiguard.png"
+    }
 });
 
 browser.contextMenus.create({
     id: "sploitus",
     title: "Sploitus(e.g. cve-20xx-xxx,, service name)",
     contexts:["selection", "link"],
-    parentId: "Vuln"
+    parentId: "Vuln",
+    icons: {
+        "16": "icons/icon/sploitus.png"
+    }
 });
 
 browser.contextMenus.create({
     id: "vulmon",
     title:"Vulmon(e.g. cve-20xx-xxx)",
     contexts:["selection", "link"],
-    parentId: "Vuln"
+    parentId: "Vuln",
+    icons: {
+        "16": "icons/icon/vulmon.png"
+    }
 });
 
 // Create Malicious Software Search context menus
@@ -170,7 +218,10 @@ browser.contextMenus.create({
     id: "malshare",
     title: "Malshare(MD5)",
     contexts:["selection", "link"],
-    parentId: "malware"
+    parentId: "malware",
+    icons: {
+        "16": "icons/icon/malshare.png"
+    }
 });
 
 
@@ -188,21 +239,30 @@ browser.contextMenus.create({
     id:"twitter",
     title:"Twitter",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/twitter.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"qiita",
     title:"Qiita",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/qiita.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"github",
     title:"Github",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/github.png"
+    }
 });
 
 
@@ -210,28 +270,40 @@ browser.contextMenus.create({
     id:"facebook",
     title:"FaceBook",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/facebook.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"instagram",
     title:"Instagram",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/instagram.png"
+    }
 });
 
 browser.contextMenus.create({
     id:"linkedin",
     title:"LinkedIn",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/linkedin.png"
+    }
 });
 
 browser.contextMenus.create({
     id: "pinterest",
     title: "Pinterest",
     contexts:["selection", "link"],
-    parentId: "SNS"
+    parentId: "SNS",
+    icons: {
+        "16": "icons/icon/pinterest.png"
+    }
 });
 
 
