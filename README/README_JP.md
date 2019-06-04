@@ -28,6 +28,7 @@ Webページ中のURL,Domain等をハイライトして右クリックすると�
 |FortiGuard|https://fortiguard.com/|CVE|
 |Sploitus|https://sploitus.com/|CVE|
 |Vulmon|https://vulmon.com/|CVE|
+|Malshare|https://malshare.com/|MD5 Hash|
 |Twitter|https://twitter.com/|SNS|
 |Qiita|https://qiita.com|SNS|
 |GitHub|https://github.com|SNS|

@@ -33,6 +33,7 @@ When You want to search using some engine, You choose one of list.
 |FortiGuard|https://fortiguard.com/|CVE|
 |Sploitus|https://sploitus.com/|CVE|
 |Vulmon|https://vulmon.com/|CVE|
+|Malshare|https://malshare.com/|MD5 Hash|
 |Twitter|https://twitter.com/|SNS|
 |Qiita|https://qiita.com|SNS|
 |GitHub|https://github.com|SNS|
