@@ -8,7 +8,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "domaintools whois",
-    title: "Domain Tools(e.g. hoge.com)",
+    title: "Domain Tools",
     contexts:["selection", "link"],
     parentId: "whois",
     icons: {
@@ -26,7 +26,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"abuseIPDB",
-    title:"AbuseIPDB(e.g. x.x.x.x)",
+    title:"AbuseIPDB",
     contexts:["selection", "link"],
     parentId: "IP",
     icons: {
@@ -36,7 +36,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"hackertarget IP",
-    title:"HackerTarget(e.g. x.x.x.x)",
+    title:"HackerTarget",
     contexts:["selection", "link"],
     parentId: "IP",
     icons: {
@@ -46,7 +46,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"censys IP",
-    title:"Censys(e.g. x.x.x.x)",
+    title:"Censys",
     contexts:["selection", "link"],
     parentId: "IP",
     icons: {
@@ -56,7 +56,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"shodan",
-    title:"Shodan IP(e.g. x.x.x.x)",
+    title:"Shodan IP",
     contexts:["selection", "link"],
     parentId: "IP",
     icons: {
@@ -66,7 +66,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"fofa",
-    title:"FOFA IP(e.g. x.x.x.x)",
+    title:"FOFA IP",
     contexts:["selection", "link"],
     parentId: "IP",
     icons:{
@@ -76,7 +76,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"virustotal",
-    title:"VirusTotal IP(e.g. x.x.x.x)",
+    title:"VirusTotal IP",
     contexts:["selection", "link"],
     parentId: "IP",
     icons:{
@@ -96,7 +96,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"censys Domain",
-    title:"Censys(e.g hoge.com)",
+    title:"Censys",
     contexts:["selection", "link"],
     parentId: "Domain",
     icons: {
@@ -106,7 +106,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"shodan Domain",
-    title:"Shodan(e.g. hoge.com)",
+    title:"Shodan",
     contexts:["selection", "link"],
     parentId: "Domain",
     icons: {
@@ -116,7 +116,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"domainwatch",
-    title:"DomainWatch(e.g hoge.com)",
+    title:"DomainWatch",
     contexts:["selection", "link"],
     parentId: "Domain",
     icons: {
@@ -126,7 +126,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"virustotal Domain",
-    title:"VirusTotal(e.g. hoge.com)",
+    title:"VirusTotal",
     contexts:["selection", "link"],
     parentId: "Domain",
     icons: {
@@ -144,7 +144,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"urlscan",
-    title:"URLscan(e.g. hxxp://hoge.com/)",
+    title:"URLscan",
     contexts:["selection", "link"],
     parentId: "URL",
     icons: {
@@ -161,7 +161,7 @@ browser.contextMenus.create({
 */
 browser.contextMenus.create({
     id: "archive",
-    title: "Wayback Machine(e.g. hxxp://hoge.com)",
+    title: "Wayback Machine",
     contexts: ["selection", "link"],
     parentId: "URL",
     icons: {
@@ -179,7 +179,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "fortiguard",
-    title: "FortiGuard CVE(e.g. cve-20xx-xxx)",
+    title: "FortiGuard CVE",
     contexts:["selection", "link"],
     parentId: "Vuln",
     icons: {
@@ -189,7 +189,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "sploitus",
-    title: "Sploitus(e.g. cve-20xx-xxx,, service name)",
+    title: "Sploitus",
     contexts:["selection", "link"],
     parentId: "Vuln",
     icons: {
@@ -199,7 +199,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "vulmon",
-    title:"Vulmon(e.g. cve-20xx-xxx)",
+    title:"Vulmon",
     contexts:["selection", "link"],
     parentId: "Vuln",
     icons: {
@@ -216,7 +216,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "malshare",
-    title: "Malshare(MD5)",
+    title: "Malshare",
     contexts:["selection", "link"],
     parentId: "malware",
     icons: {
