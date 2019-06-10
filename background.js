@@ -230,8 +230,8 @@ browser.contextMenus.create({
 //create SNS search context menus
 
 browser.contextMenus.create({
-    id: "SNS",
-    title: "SNS Account",
+    id: "social",
+    title: "Social",
     contexts:["selection", "link"]
 });
 
@@ -239,7 +239,7 @@ browser.contextMenus.create({
     id:"twitter",
     title:"Twitter",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/twitter.png"
     }
@@ -249,7 +249,7 @@ browser.contextMenus.create({
     id:"qiita",
     title:"Qiita",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/qiita.png"
     }
@@ -259,7 +259,7 @@ browser.contextMenus.create({
     id:"github",
     title:"Github",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/github.png"
     }
@@ -270,7 +270,7 @@ browser.contextMenus.create({
     id:"facebook",
     title:"FaceBook",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/facebook.png"
     }
@@ -280,7 +280,7 @@ browser.contextMenus.create({
     id:"instagram",
     title:"Instagram",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/instagram.png"
     }
@@ -290,7 +290,7 @@ browser.contextMenus.create({
     id:"linkedin",
     title:"LinkedIn",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/linkedin.png"
     }
@@ -300,7 +300,7 @@ browser.contextMenus.create({
     id: "pinterest",
     title: "Pinterest",
     contexts:["selection", "link"],
-    parentId: "SNS",
+    parentId: "Social",
     icons: {
         "16": "icons/icon/pinterest.png"
     }
