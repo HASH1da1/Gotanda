@@ -266,8 +266,8 @@ browser.contextMenus.create({
 
 // Create Malicious Software Search context menus
 browser.contextMenus.create({
-    id: "malware",
-    title: "Malware",
+    id: "hash",
+    title: "Hashes",
     contexts:["selection", "link"]
 });
 
@@ -275,11 +275,21 @@ browser.contextMenus.create({
     id: "malshare",
     title: "Malshare",
     contexts:["selection", "link"],
-    parentId: "malware",
+    parentId: "hash",
     icons: {
         "16": "icons/icon/malshare.png"
     }
 });
+
+browser.contextMenus.create({
+    id: "virustotal hash",
+    title: "VirusTotal Hash",
+    contexts: ["selection", "link"],
+    parentId: "hash",
+    icons:{
+        "16": "icons/icon/virustotal.png"
+    }   
+})
 
 
 
@@ -480,9 +490,13 @@ switch (info.menuItemId){
     case "vulncode":
         url = "https://www.vulncode-db.com/"+artifact;
         break;
-    //Malware
+    //hashes
     case "malshare":
         url = "https://malshare.com/search.php?query="+artifact;
+        break;
+
+    case "virustotal hash":
+        url = "https://www.virustotal.com/gui/search/"+artifact;
         break;
 
     //SNS
