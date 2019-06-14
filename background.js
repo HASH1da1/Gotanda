@@ -83,6 +83,43 @@ browser.contextMenus.create({
         "16": "icons/icon/virustotal.png"
     }
 });
+browser.contextMenus.create({
+    id: "greynoise",
+    title: "Greynoise",
+    contexts: ["selection", "link"],
+    parentId: "IP",
+    icons:{
+        "16": "icons/icon/greynoise.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "dnslytics ip",
+    title: "DNSlytics",
+    contexts: ["selection", "link"],
+    parentId: "IP",
+    icons: {
+        "16": "icons/icon/dnslytics.png"
+
+    }
+});
+
+// create ASN search context menus
+browser.contextMenus.create({
+    id: "asn",
+    title: "ASN",
+    contexts: ["selection", "link"]
+});
+
+browser.contextMenus.create({
+    id: "dnslytics asn",
+    title: "DNSlytics ASN",
+    contexts: ["selection", "link"],
+    parentId: "asn",
+    icons: {
+        "16": "icons/icon/dnslytics.png"
+    }
+});
 
 
 
@@ -204,6 +241,26 @@ browser.contextMenus.create({
     parentId: "Vuln",
     icons: {
         "16": "icons/icon/vulmon.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "cxsecurity",
+    title: "CXSecurity",
+    contexts:["selection", "link" ],
+    parentId: "Vuln",
+    icons:{
+        "16": "icons/icon/cxsecurity.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "vulncode",
+    title: "Vulncode DB",
+    contexts: ["selection", "link"],
+    parentId: "Vuln",
+    icons: {
+        "16": "icons/icon/vulncode.png"  
     }
 });
 
@@ -357,7 +414,19 @@ switch (info.menuItemId){
         url = "https://virustotal.com/#/ip-address/"+artifact;
         break;
 
+    case "greynoise":
+        url = "https://viz.greynoise.io/ip/"+artifact;
+        break;
+    case "dnslytics ip":
+        url = "https://dnslytics.com/ip/"+artifact;
+        break;  
 
+    //ASN
+    case "dnslytics asn":
+        url ="https://dnslytics.com/bgp/"+artifact;
+        break;
+    
+        
     //Domain
 
     case "censys Domain":
@@ -403,8 +472,14 @@ switch (info.menuItemId){
     case "vulmon":
         url = "https://vulmon.com/searchpage?q="+artifact;
         break;
+    
+    case "cxsecurity":
+        url = "https://cxsecurity.com/cveshow/"+artifact;
+        break;
 
-
+    case "vulncode":
+        url = "https://www.vulncode-db.com/"+artifact;
+        break;
     //Malware
     case "malshare":
         url = "https://malshare.com/search.php?query="+artifact;
