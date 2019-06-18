@@ -104,6 +104,16 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "tor ip",
+    title: "Tor Relay IP",
+    contexts: ["selection", "link"],
+    parentId: "IP",
+    icons: {
+        "16": "icons/icon/tor.ico"
+    }
+});
+
 // create ASN search context menus
 browser.contextMenus.create({
     id: "asn",
@@ -168,6 +178,16 @@ browser.contextMenus.create({
     parentId: "Domain",
     icons: {
         "16": "icons/icon/virustotal.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "tor domain",
+    title: "Tor Relay domain",
+    contexts: ["selection", "link"],
+    parentId: "Domain",
+    icons: {
+        "16": "icons/icon/tor.ico"
     }
 });
 
@@ -431,6 +451,10 @@ switch (info.menuItemId){
         url = "https://dnslytics.com/ip/"+artifact;
         break;  
 
+    case "tor relay ip":
+        url = "https://metrics.torproject.org/rs.html#search/"+artifact;
+        break;
+
     //ASN
     case "dnslytics asn":
         url ="https://dnslytics.com/bgp/"+artifact;
@@ -453,6 +477,10 @@ switch (info.menuItemId){
     
     case "virustotal Domain":
         url = "https://virustotal.com/#/domain/"+artifact;
+        break;
+
+    case "tor relay domain":
+        url ="https://metrics.torproject.org/rs.html#search/"+artifact;
         break;
     //URL
 

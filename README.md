@@ -26,13 +26,17 @@ When You want to search using some engine, You choose one of list.
 |Censys|https://censys.io/|IP, Domain|
 |Shodan|https://shodan.io/|IP, Domain|
 |FOFA|https://fofa.so/|IP, Domain|
-|VirusTotal|https://virustotal.com/|IP, Domain, URL|
+|VirusTotal|https://virustotal.com/|IP, Domain, URL,Hash|
+|Tor Relay Search|https://metrics.torproject.org/|IP,Domain|
 |Domain Watch|https://domainwat.ch/|Domain, Email|
+|DNSlytics|https://dnslytics.com/|IP,ASN|
 |URLscan|https://urlscan.io/|URL|
 |Web Archive|https://web.archive.org|URL|
 |FortiGuard|https://fortiguard.com/|CVE|
 |Sploitus|https://sploitus.com/|CVE|
 |Vulmon|https://vulmon.com/|CVE|
+|CXSecurity|https://cxsecurity.com/|CVE|
+|Vulncode-DB|https://www.vulncode-db.com/|CVE|
 |Malshare|https://malshare.com/|MD5 Hash|
 |Twitter|https://twitter.com/|SNS|
 |Qiita|https://qiita.com|SNS|
