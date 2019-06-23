@@ -29,8 +29,9 @@ When You want to search using some engine, You choose one of list.
 |VirusTotal|https://virustotal.com/|IP, Domain, URL,Hash|
 |Tor Relay Search|https://metrics.torproject.org/|IP,Domain|
 |Domain Watch|https://domainwat.ch/|Domain, Email|
-|DNSlytics|https://dnslytics.com/|IP,ASN|
+|DNSlytics|https://dnslytics.com/|IPv4,IPv6,ASN|
 |URLscan|https://urlscan.io/|URL|
+|Ultratools|https://www.ultratools.com/|IPv6|
 |Web Archive|https://web.archive.org|URL|
 |FortiGuard|https://fortiguard.com/|CVE|
 |Sploitus|https://sploitus.com/|CVE|
