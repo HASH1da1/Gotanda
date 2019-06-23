@@ -21,14 +21,21 @@ browser.contextMenus.create({
 browser.contextMenus.create({
     id: "IP",
     title: "IP",
-    contexts:["selection", "link"]
+    contexts: ["selection", "link"]
+})
+
+browser.contextMenus.create({
+    id: "IPv4",
+    title: "IPv4",
+    contexts:["selection", "link"],
+    parentId:"IP"
 });
 
 browser.contextMenus.create({
     id:"abuseIPDB",
     title:"AbuseIPDB",
     contexts:["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons: {
         "16": "icons/icon/abuseipdb.png"
     }
@@ -38,7 +45,7 @@ browser.contextMenus.create({
     id:"hackertarget IP",
     title:"HackerTarget",
     contexts:["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons: {
         "16": "icons/icon/hackertarget.png"
     }
@@ -48,7 +55,7 @@ browser.contextMenus.create({
     id:"censys IP",
     title:"Censys",
     contexts:["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons: {
         "16": "icons/icon/censys.png"
     }
@@ -58,7 +65,7 @@ browser.contextMenus.create({
     id:"shodan",
     title:"Shodan IP",
     contexts:["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons: {
         "16": "icons/icon/shodan.png"
     }
@@ -68,7 +75,7 @@ browser.contextMenus.create({
     id:"fofa",
     title:"FOFA IP",
     contexts:["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons:{
         "16": "icons/icon/fofa.png"
     }
@@ -78,7 +85,7 @@ browser.contextMenus.create({
     id:"virustotal",
     title:"VirusTotal IP",
     contexts:["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons:{
         "16": "icons/icon/virustotal.png"
     }
@@ -87,7 +94,7 @@ browser.contextMenus.create({
     id: "greynoise",
     title: "Greynoise",
     contexts: ["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons:{
         "16": "icons/icon/greynoise.png"
     }
@@ -97,7 +104,7 @@ browser.contextMenus.create({
     id: "dnslytics ip",
     title: "DNSlytics",
     contexts: ["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons: {
         "16": "icons/icon/dnslytics.png"
 
@@ -108,11 +115,40 @@ browser.contextMenus.create({
     id: "tor ip",
     title: "Tor Relay IP",
     contexts: ["selection", "link"],
-    parentId: "IP",
+    parentId: "IPv4",
     icons: {
         "16": "icons/icon/tor.ico"
     }
 });
+
+
+browser.contextMenus.create({
+    id: "IPv6",
+    title: "IPv6",
+    contexts: ["selection", "link"],
+    parentId: "IP"
+});
+
+browser.contextMenus.create({
+    id: "dnslytics v6",
+    title: "DNSlytics IPv6",
+    contexts: ["selection", "link"],
+    parentId: "IPv6",
+    icons: {
+        "16": "icons/icon/dnslytics.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "ultratools v6",
+    title: "Ultratools v6",
+    contexts: ["selection", "link"],
+    parentId: "IPv6",
+    icons: {
+        "16": "icons/icon/ultratools.png"
+    }
+})
+
 
 // create ASN search context menus
 browser.contextMenus.create({
@@ -397,6 +433,8 @@ browser.contextMenus.create({
 //create empty variables
 var url = "";
 var artifact = "";
+var v6URI = "";
+
 
 
 // when you click event listener function
@@ -406,20 +444,21 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     // strip leading and trailing spaces
     if (info.selectionText) {
         artifact = String(info.selectionText).trim();
+        v6URI = encodeURIComponent(info.selectionText);
     } else if (info.linkUrl) {
         var link = new URL(info.linkUrl);
         artifact = link.host;
     } else if (info.srcUrl) {
         var src = new URL(info.srcUrl);
         artifact = src.host;
-    } 
-
+    }
+    
 switch (info.menuItemId){
     //whois
     case "domaintools whois":
         url = "https://whois.domaintools.com/"+artifact;
         break;
-    //IP
+    //IPv4
     case "abuseIPDB":
         url = "https://www.abuseipdb.com/check/"+artifact;
         break;
@@ -453,6 +492,16 @@ switch (info.menuItemId){
 
     case "tor relay ip":
         url = "https://metrics.torproject.org/rs.html#search/"+artifact;
+        break;
+
+    //IPv6
+
+    case "dnslytics v6":
+        url ="https://dnslytics.com/ipv6/"+artifact;
+        break;
+    
+    case "ultratools v6":
+        url ="https://www.ultratools.com/tools/ipv6InfoResult?ipAddress="+v6URI;
         break;
 
     //ASN
