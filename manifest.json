@@ -3,7 +3,7 @@
     "name":"Gotanda",
     "version":"1.4.4",
     "description":"Gotanda is Firefox Web Extension for OSINT.",
-    "icons":{
+    "icons":{ 
         "128":"icons/icon128.png"
     },
 
