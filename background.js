@@ -23,7 +23,7 @@ browser.contextMenus.create({
     title: "IP",
     contexts: ["selection", "link"]
 })
-
+//IPv4
 browser.contextMenus.create({
     id: "IPv4",
     title: "IPv4",
@@ -121,7 +121,17 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "threatcrowd ip",
+    title: "ThreatCrowd IP",
+    contexts: ["selection", "link"],
+    parentId: "IPv4",
+    icons: {
+        "16": "icons/icon/threatcrowd.png"
+    }
+});
 
+//IPv6
 browser.contextMenus.create({
     id: "IPv6",
     title: "IPv6",
@@ -224,6 +234,16 @@ browser.contextMenus.create({
     parentId: "Domain",
     icons: {
         "16": "icons/icon/tor.ico"
+    }
+});
+
+browser.contextMenus.create({
+    id: "threatcrowd domain",
+    title: "ThreatCrowd Domain",
+    contexts: ["selection", "link"],
+    parentId: "Domain",
+    icons: {
+        "16": "icons/icon/threatcrowd.png"
     }
 });
 
@@ -494,6 +514,10 @@ switch (info.menuItemId){
         url = "https://metrics.torproject.org/rs.html#search/"+artifact;
         break;
 
+    case "threatcrowd ip":
+        url="https://www.threatcrowd.org/ip.php?ip="+artifact;
+        break;  
+
     //IPv6
 
     case "dnslytics v6":
@@ -530,6 +554,10 @@ switch (info.menuItemId){
 
     case "tor relay domain":
         url ="https://metrics.torproject.org/rs.html#search/"+artifact;
+        break;
+
+    case "threatcrowd domain":
+        url="https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
     //URL
 
