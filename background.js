@@ -530,7 +530,7 @@ switch (info.menuItemId){
 
     //ASN
     case "dnslytics asn":
-        url ="https://dnslytics.com/bgp/"+artifact;
+        url ="https://dnslytics.com/bgp/"+artifact.toLowerCase();
         break;
     
         
