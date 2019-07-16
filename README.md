@@ -33,13 +33,16 @@ When You want to search using some engine, You choose one of list.
 |DNSlytics|https://dnslytics.com/|IPv4,IPv6,ASN|
 |URLscan|https://urlscan.io/|URL|
 |Ultratools|https://www.ultratools.com/|IPv6|
-|Web Archive|https://web.archive.org|URL|
+|Wayback Machine|https://web.archive.org|URL|
+|aguse|https://www.aguse.jp/|URL|
+|check-host|https://check-host.net/|URL|
 |FortiGuard|https://fortiguard.com/|CVE|
 |Sploitus|https://sploitus.com/|CVE|
 |Vulmon|https://vulmon.com/|CVE|
 |CXSecurity|https://cxsecurity.com/|CVE|
 |Vulncode-DB|https://www.vulncode-db.com/|CVE|
 |Malshare|https://malshare.com/|MD5 Hash|
+|ThreatCrowd|https://www.threatcrowd.org/|IP,Domain|
 |Twitter|https://twitter.com/|SNS|
 |Qiita|https://qiita.com|SNS|
 |GitHub|https://github.com|SNS|
