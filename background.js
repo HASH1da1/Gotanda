@@ -264,6 +264,26 @@ browser.contextMenus.create({
         "16": "icons/icon/urlscan.png"
    }
 });
+
+browser.contextMenus.create({
+    id:"aguse",
+    title:"aguse.jp",
+    contexts:["selection","link"],
+    parentId:"URL",
+    icons:{
+        "16":"icons/icon/aguse.png"
+    }
+});
+
+browser.contextMenus.create({
+    id:"check-host",
+    title:"Check-Host",
+    contexts:["selection","link"],
+    parentId:"URL",
+    icons:{
+        "16":"icons/icon/checkhost.png"
+    }
+});
 /*
 browser.contextMenus.create({
     id:"virustotal URL",
@@ -530,7 +550,7 @@ switch (info.menuItemId){
 
     //ASN
     case "dnslytics asn":
-        url ="https://dnslytics.com/bgp/"+artifact;
+        url ="https://dnslytics.com/bgp/"+artifact.toLowerCase();
         break;
     
         
@@ -563,6 +583,14 @@ switch (info.menuItemId){
 
     case "urlscan":
         url = "https://urlscan.io/api/v1/search/?q=domain:"+artifact;
+        break;
+    
+    case "aguse":
+        url = "https://www.aguse.jp/?url="+encodeURIComponent(artifact);
+        break;
+
+    case "check-host":
+        url = "https://check-host.net/ip-info?host="+artifact;
         break;
 /*
     case "virustotal URL":
