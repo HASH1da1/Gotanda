@@ -475,6 +475,21 @@ var url = "";
 var artifact = "";
 var v6URI = "";
 
+//refang function
+function optimizeArtifact(artifact){
+    while(artifact.includes("[.]")){
+        artifact = artifact.replace("[.]",".");
+    }
+
+    if(artifact.includes("hxxp://")){
+        artifact = artifact.replace("hxxp://","http://");
+    }
+
+    if(artifact.includes("hxxps://")){
+        artifact = artifact.replace("hxxps://","https://");
+    }
+    return artifact;
+}
 
 
 // when you click event listener function
@@ -493,6 +508,8 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
         artifact = src.host;
     }
     
+    artifact = optimizeArtifact(artifact);
+
 switch (info.menuItemId){
     //whois
     case "domaintools whois":
@@ -530,7 +547,7 @@ switch (info.menuItemId){
         url = "https://dnslytics.com/ip/"+artifact;
         break;  
 
-    case "tor relay ip":
+    case "tor ip":
         url = "https://metrics.torproject.org/rs.html#search/"+artifact;
         break;
 
@@ -572,7 +589,7 @@ switch (info.menuItemId){
         url = "https://virustotal.com/#/domain/"+artifact;
         break;
 
-    case "tor relay domain":
+    case "tor domain":
         url ="https://metrics.torproject.org/rs.html#search/"+artifact;
         break;
 
