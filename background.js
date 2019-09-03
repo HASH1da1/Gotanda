@@ -188,6 +188,23 @@ browser.contextMenus.create({
 });
 
 browser.contextMenus.create({
+    id: "certificate",
+    title:"Certificate",
+    contexts:["selection", "link"],
+    parentId:"Domain"
+});
+
+browser.contextMenus.create({
+    id:"crt.sh",
+    title:"crt.sh",
+    contexts:["selection","link"],
+    parentId:"certificate",
+    icons:{
+        "16": "icons/icon/crtsh.png"
+    }
+});
+
+browser.contextMenus.create({
     id:"censys Domain",
     title:"Censys",
     contexts:["selection", "link"],
@@ -572,6 +589,10 @@ switch (info.menuItemId){
     
         
     //Domain
+
+    case "crt.sh":
+        url="https://crt.sh/?q="+artifact;
+        break;
 
     case "censys Domain":
         url = "https://censys.io/domain?q="+artifact;
