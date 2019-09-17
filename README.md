@@ -1,14 +1,14 @@
 # Gotanda is OSINT extension
-[README-JP](README/README_JP.md "JP") 
+[日本語](README/README_JP.md "JP") 
 
 
-Gotanda is for myself Firefox Web Extension.
+Gotanda is OSINT(Open Source Intelligence) Web Extension for Firefox.
 
-This Web Extension could search OSINT information from some IOC.(IP,Domain,URL,SNS...etc)
+This Web Extension could search OSINT information from some IOC in web page.(IP,Domain,URL,SNS...etc)
 
 This Repository partly the studying and JavaScript practice.
 
-Download [here](https://addons.mozilla.org/ja/firefox/addon/gotanda/ "here").
+Download from [here](https://addons.mozilla.org/ja/firefox/addon/gotanda/ "here").
 
 ## Usage
 
@@ -16,7 +16,7 @@ Right click highlighted IOC strings, It will show contextmenus.
 
 When You want to search using some engine, You choose one of list.
 
-## Search Engine
+## Search Engine List
 
 |Name|URL|Category|
 |:---|:--|:-------|
