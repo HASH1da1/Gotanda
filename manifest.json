@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name":"Gotanda",
-    "version":"1.5.1",
+    "version":"1.5.2",
     "description":"Gotanda is Firefox Web Extension for OSINT.",
     "icons":{ 
         "128":"icons/icon128.png"

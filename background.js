@@ -319,6 +319,16 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id:"url-haus",
+    title:"URL Haus",
+    contexts:["selection","link"],
+    pranteId: "URL",
+    icons:{
+        "16":"icons/icon/abusech.png"
+    }
+})
+
 
 //create Vulnerability context menus
 browser.contextMenus.create({
@@ -630,13 +640,17 @@ switch (info.menuItemId){
     case "check-host":
         url = "https://check-host.net/ip-info?host="+artifact;
         break;
-/*
+/*  TODO convert URL to SHA256
     case "virustotal URL":
         url ="https://virustotal.com/#/home/url/"+artifact;
         break;
 */
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
+        break;
+    
+    case "url-haus":
+        url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
 
 
