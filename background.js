@@ -188,23 +188,6 @@ browser.contextMenus.create({
 });
 
 browser.contextMenus.create({
-    id: "certificate",
-    title:"Certificate",
-    contexts:["selection", "link"],
-    parentId:"Domain"
-});
-
-browser.contextMenus.create({
-    id:"crt.sh",
-    title:"crt.sh",
-    contexts:["selection","link"],
-    parentId:"certificate",
-    icons:{
-        "16": "icons/icon/crtsh.png"
-    }
-});
-
-browser.contextMenus.create({
     id:"censys Domain",
     title:"Censys",
     contexts:["selection", "link"],
@@ -261,6 +244,33 @@ browser.contextMenus.create({
     parentId: "Domain",
     icons: {
         "16": "icons/icon/threatcrowd.png"
+    }
+});
+
+// create SSL certificate search context menus
+
+browser.contextMenus.create({
+    id: "certificate",
+    title:"Certificate",
+    contexts:["selection", "link"],
+});
+
+browser.contextMenus.create({
+    id:"crt.sh",
+    title:"crt.sh",
+    contexts:["selection","link"],
+    parentId:"certificate",
+    icons:{
+        "16": "icons/icon/crtsh.png"
+    }
+});
+
+browser.contextMenus.create({
+    id:"ssl-bl",
+    title:"Abuse.ch SSLBL",
+    contexts:["selection", "link"],
+    icons:{
+        "16": "icons/icon/abusech.png"
     }
 });
 
@@ -600,10 +610,6 @@ switch (info.menuItemId){
         
     //Domain
 
-    case "crt.sh":
-        url="https://crt.sh/?q="+artifact;
-        break;
-
     case "censys Domain":
         url = "https://censys.io/domain?q="+artifact;
         break;
@@ -627,6 +633,17 @@ switch (info.menuItemId){
     case "threatcrowd domain":
         url="https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
+
+    // certificate
+    
+    case "crt.sh":
+        url="https://crt.sh/?q="+artifact;
+        break;
+
+    case "ssl-bl":
+        url ="https://sslbl.abuse.ch/ssl-certificates/sha1/"+artifact;
+        break;
+
     //URL
 
     case "urlscan":
