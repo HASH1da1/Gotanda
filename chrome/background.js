@@ -390,6 +390,11 @@ var url = "";
 var artifact = "";
 var v6URI = "";
 
+/*
+*source 
+*https://github.com/mitchmoser/sputnik
+*https://stackoverflow.com/questions/13899299/write-text-to-clipboard#18258178
+*/
 function copyStringToClipboard(str) {
     // Create new element
     var el = document.createElement("textarea");
@@ -427,10 +432,7 @@ function optimizeArtifact(artifact){
     return artifact;
 };
 
-
-// when you click event listener function
-
-
+// when you click artifact, kisten up event listener function
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     // strip leading and trailing spaces
     if (info.selectionText) {
@@ -631,7 +633,6 @@ switch (info.menuItemId){
     case "pinterest":
         url = "https://www.pinterest.jp/"+artifact;
         break;
-
 }
-chrome.tabs.create({url: url});
+    chrome.tabs.create({url: url});
 });
