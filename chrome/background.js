@@ -205,7 +205,8 @@ chrome.contextMenus.create({
 chrome.contextMenus.create({
     id:"ssl-bl",
     title:"Abuse.ch SSLBL",
-    contexts:["selection", "link"]
+    contexts:["selection", "link"],
+    parentId:"certificate"
 });
 
 // create URL search context menus
@@ -411,13 +412,17 @@ function optimizeArtifact(artifact){
     while(artifact.includes("[.]")){
         artifact = artifact.replace("[.]",".");
     }
-
     if(artifact.includes("hxxp://")){
         artifact = artifact.replace("hxxp://","http://");
     }
-
     if(artifact.includes("hxxps://")){
         artifact = artifact.replace("hxxps://","https://");
+    }
+    if(artifact.includes("http[:]//")){
+        artifact = artifact.replace("http[:]//","http://")
+    }
+    if(artifact.includes("https[:]//")){
+        artifact = artifact.replace("https[:]//","https://")
     }
     return artifact;
 };
@@ -628,5 +633,5 @@ switch (info.menuItemId){
         break;
 
 }
-chrome.tabs.create({url: url})
+chrome.tabs.create({url: url});
 });

@@ -517,13 +517,17 @@ function optimizeArtifact(artifact){
     while(artifact.includes("[.]")){
         artifact = artifact.replace("[.]",".");
     }
-
     if(artifact.includes("hxxp://")){
         artifact = artifact.replace("hxxp://","http://");
     }
-
     if(artifact.includes("hxxps://")){
         artifact = artifact.replace("hxxps://","https://");
+    }
+    if(artifact.includes("http[:]//")){
+        artifact = artifact.replace("http[:]//","http://")
+    }
+    if(artifact.includes("https[:]//")){
+        artifact = artifact.replace("https[:]//","https://")
     }
     return artifact;
 }
