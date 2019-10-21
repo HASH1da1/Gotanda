@@ -16,6 +16,36 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "domainwatch whois",
+    title: "Domainwatch whois",
+    contexts: ["selection", "link"],
+    parentId:"whois",
+    icons:{
+        "16": "icons/icon/domainwatch.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "securitytrails whois",
+    title: "SecurityTrails",
+    contexts: ["selection", "link"],
+    parentId:"whois",
+    icons:{
+        "16": "icons/icon/securitytrails"
+    }
+});
+
+browser.contextMenus.create({
+    id: "whoisds",
+    title: "WHOISDS",
+    contexts:["selection", "link"],
+    parentId: "whois",
+    icons: {
+        "16": "icons/icon/whoisds.png"
+    }
+});
+
 // create IP address context menus
 
 browser.contextMenus.create({
@@ -555,6 +585,17 @@ switch (info.menuItemId){
     //whois
     case "domaintools whois":
         url = "https://whois.domaintools.com/"+artifact;
+        break;
+
+    case "domainwatch whois":
+        url ="https://domainwat.ch/whois/"+artifact;
+        break;
+
+    case "securitytrails whois":
+        url = "https://securitytrails.com/domain/"+artifact+"/dns";
+        break;
+    case "whoisds":
+        url = "https://whoisds.com/whois-lookup?domain="+artifact;
         break;
     //IPv4
     case "abuseIPDB":
