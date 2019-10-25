@@ -161,6 +161,16 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "ipalyzer",
+    title: "IPAlyzer",
+    contexts:["selection", "link"],
+    parentId: "IPv4",
+    icons: {
+        "16": "icons/icon/ipalyzer.png"
+    }
+});
+
 //IPv6
 browser.contextMenus.create({
     id: "IPv6",
@@ -452,7 +462,17 @@ browser.contextMenus.create({
     icons:{
         "16": "icons/icon/virustotal.png"
     }   
-})
+});
+
+browser.contextMenus.create({
+    id:"hybrid analysis",
+    title: "Hybrid Analysis Hash",
+    contexts:["selection", "link"],
+    parentId:"hash",
+    icons:{
+        "16": "icons/icon/hybridanalysis.png"
+    }
+});
 
 
 
@@ -634,8 +654,12 @@ switch (info.menuItemId){
         break;
 
     case "threatcrowd ip":
-        url="https://www.threatcrowd.org/ip.php?ip="+artifact;
+        url = "https://www.threatcrowd.org/ip.php?ip="+artifact;
         break;  
+    
+    case "ipalyzer":
+        url = "https://ipalyzer.com/"+artifact;
+        break;
 
     //IPv6
 
@@ -744,6 +768,10 @@ switch (info.menuItemId){
 
     case "virustotal hash":
         url = "https://www.virustotal.com/gui/search/"+artifact;
+        break;
+
+    case "hybrid analysis":
+        url = "https://www.hybrid-analysis.com/sample/"+artifact;
         break;
 
     //SNS
