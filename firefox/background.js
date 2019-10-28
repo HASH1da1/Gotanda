@@ -572,6 +572,16 @@ browser.contextMenus.create({
     parentId: "social"
 });
 
+browser.contextMenus.create({
+    id: "twittertl",
+    title: "Twitter Timeline",
+    contexts:["selection","link"],
+    parentId: "timeline",
+    icons:{
+        "16":"icons/icon/twitter.png"
+    }
+});
+
 
 //create empty variables
 var url = "";
@@ -818,6 +828,11 @@ switch (info.menuItemId){
 
     case "pinterest":
         url = "https://www.pinterest.jp/"+artifact;
+        break;
+    
+    //SNS timelinee search
+    case "twittertl":
+        url = "https://twitter.com/search?q="+artifact;
         break;
 
 }
