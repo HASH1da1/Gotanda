@@ -485,6 +485,14 @@ browser.contextMenus.create({
     contexts:["selection", "link"]
 });
 
+//SNS Account search
+browser.contextMenus.create({
+    id: "social sccount",
+    title: "Social Account",
+    contexts:["selection","link"],
+    parentId: "social"
+});
+
 browser.contextMenus.create({
     id:"twitter",
     title:"Twitter",
@@ -556,6 +564,14 @@ browser.contextMenus.create({
     }
 });
 
+//SNS Timeline search
+browser.contextMenus.create({
+    id: "timeline",
+    title: "TimeLine",
+    contexts:["selection", "link"],
+    parentId: "social"
+});
+
 
 //create empty variables
 var url = "";
@@ -573,11 +589,8 @@ function optimizeArtifact(artifact){
     if(artifact.includes("hxxps://")){
         artifact = artifact.replace("hxxps://","https://");
     }
-    if(artifact.includes("http[:]//")){
-        artifact = artifact.replace("http[:]//","http://")
-    }
-    if(artifact.includes("https[:]//")){
-        artifact = artifact.replace("https[:]//","https://")
+    if(artifact.includes("[:]//")){
+        artifact = artifact.replace("[:]//","://")
     }
     return artifact;
 }
@@ -614,9 +627,11 @@ switch (info.menuItemId){
     case "securitytrails whois":
         url = "https://securitytrails.com/domain/"+artifact+"/dns";
         break;
+
     case "whoisds":
         url = "https://whoisds.com/whois-lookup?domain="+artifact;
         break;
+
     //IPv4
     case "abuseIPDB":
         url = "https://www.abuseipdb.com/check/"+artifact;
@@ -726,6 +741,7 @@ switch (info.menuItemId){
     case "check-host":
         url = "https://check-host.net/ip-info?host="+artifact;
         break;
+
 /*  TODO convert URL to SHA256
     case "virustotal URL":
         url ="https://virustotal.com/#/home/url/"+artifact;
@@ -738,7 +754,6 @@ switch (info.menuItemId){
     case "url-haus":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
-
 
     //Vuln
 
@@ -761,6 +776,7 @@ switch (info.menuItemId){
     case "vulncode":
         url = "https://www.vulncode-db.com/"+artifact;
         break;
+
     //hashes
     case "malshare":
         url = "https://malshare.com/search.php?query="+artifact;
