@@ -388,6 +388,16 @@ browser.contextMenus.create({
 });
 
 browser.contextMenus.create({
+    id: "circl",
+    title: "CIRCL",
+    contexts: ["selection","link"],
+    parentId: "Vuln",
+    icons: {
+        "16":"icons/icon/circl.png"
+    }
+});
+
+browser.contextMenus.create({
     id: "fortiguard",
     title: "FortiGuard CVE",
     contexts:["selection", "link"],
@@ -766,6 +776,9 @@ switch (info.menuItemId){
         break;
 
     //Vuln
+    case "circl":
+        url = "https://cve.circl.lu/cve/"+artifact;
+        break;
 
     case "fortiguard":
         url = "https://fortiguard.com/search?q="+artifact+"&engine=3";
