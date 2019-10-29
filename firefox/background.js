@@ -287,11 +287,21 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "urlhaus",
+    title:"URL Haus",
+    contexts: ["selection", "link"],
+    parentId:"Domain",
+    icons: {
+        "16": "icons/icon/abusech.png"
+    }
+});
+
 // create SSL certificate search context menus
 
 browser.contextMenus.create({
     id: "certificate",
-    title:"Certificate",
+    title:"SSL-Certificate",
     contexts:["selection", "link"],
 });
 
@@ -307,8 +317,9 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id:"ssl-bl",
-    title:"Abuse.ch SSLBL",
+    title:"Abuse.ch SSLBL-Hash",
     contexts:["selection", "link"],
+    parentId:"certificate",
     icons:{
         "16": "icons/icon/abusech.png"
     }
@@ -368,17 +379,6 @@ browser.contextMenus.create({
         "16": "icons/icon/archive.png"
     }
 });
-
-browser.contextMenus.create({
-    id:"url-haus",
-    title:"URL Haus",
-    contexts:["selection","link"],
-    pranteId: "URL",
-    icons:{
-        "16":"icons/icon/abusech.png"
-    }
-})
-
 
 //create Vulnerability context menus
 browser.contextMenus.create({
