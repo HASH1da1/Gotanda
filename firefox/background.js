@@ -297,6 +297,16 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "spyse",
+    title: "Spyse",
+    contexts: ["selection", "link"],
+    parentId: "Domain",
+    icons:{
+        "16":"icons/icon/spyse.png"
+    }
+});
+
 // create SSL certificate search context menus
 
 browser.contextMenus.create({
@@ -731,11 +741,15 @@ switch (info.menuItemId){
         break;
 
     case "tor domain":
-        url ="https://metrics.torproject.org/rs.html#search/"+artifact;
+        url = "https://metrics.torproject.org/rs.html#search/"+artifact;
         break;
 
     case "threatcrowd domain":
-        url="https://www.threatcrowd.org/domain.php?domain="+artifact;
+        url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
+        break;
+
+    case "spyse":
+        url = "https://spyse.com/search/domain?q="+artifact;
         break;
 
     // certificate
