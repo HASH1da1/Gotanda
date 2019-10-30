@@ -584,6 +584,7 @@ browser.contextMenus.create({
     }
 });
 
+
 //SNS Timeline search
 browser.contextMenus.create({
     id: "timeline",
@@ -857,7 +858,7 @@ switch (info.menuItemId){
         url = "https://www.pinterest.jp/"+artifact;
         break;
     
-    //SNS timelinee search
+    //SNS timeline search
     case "twittertl":
         url = "https://twitter.com/search?q="+artifact;
         break;
