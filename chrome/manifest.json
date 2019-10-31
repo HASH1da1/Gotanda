@@ -12,6 +12,7 @@
     },
     "permissions":[
         "clipboardWrite",
+        "clipboardRead",
         "contextMenus",
         "background",
         "tabs"
