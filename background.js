@@ -499,7 +499,7 @@ browser.contextMenus.create({
 
 //SNS Account search
 browser.contextMenus.create({
-    id: "social sccount",
+    id: "social account",
     title: "Social Account",
     contexts:["selection","link"],
     parentId: "social"
@@ -509,7 +509,7 @@ browser.contextMenus.create({
     id:"twitter",
     title:"Twitter",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/twitter.png"
     }
@@ -519,7 +519,7 @@ browser.contextMenus.create({
     id:"qiita",
     title:"Qiita",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/qiita.png"
     }
@@ -529,7 +529,7 @@ browser.contextMenus.create({
     id:"github",
     title:"Github",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/github.png"
     }
@@ -540,7 +540,7 @@ browser.contextMenus.create({
     id:"facebook",
     title:"FaceBook",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/facebook.png"
     }
@@ -550,7 +550,7 @@ browser.contextMenus.create({
     id:"instagram",
     title:"Instagram",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/instagram.png"
     }
@@ -560,7 +560,7 @@ browser.contextMenus.create({
     id:"linkedin",
     title:"LinkedIn",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/linkedin.png"
     }
@@ -570,7 +570,7 @@ browser.contextMenus.create({
     id: "pinterest",
     title: "Pinterest",
     contexts:["selection", "link"],
-    parentId: "social",
+    parentId: "social account",
     icons: {
         "16": "icons/icon/pinterest.png"
     }
@@ -592,6 +592,16 @@ browser.contextMenus.create({
     parentId: "timeline",
     icons:{
         "16":"icons/icon/twitter.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "facebooktl",
+    title: "FaceBook TimeLine",
+    contexts:["selection","link"],
+    parentId: "timeline",
+    icons:{
+        "16":"icons/icon/facebook.png"
     }
 });
 
@@ -849,6 +859,10 @@ switch (info.menuItemId){
     //SNS timeline search
     case "twittertl":
         url = "https://twitter.com/search?q="+artifact;
+        break;
+
+    case "facebooktl":
+        url = "https://www.facebook.com/search/top/?q="+artifact;
         break;
 
 }
