@@ -391,7 +391,7 @@ browser.contextMenus.create({
 
 browser.contextMenus.create({
     id: "circl",
-    title: "CIRCL",
+    title: "CIRCL CVE",
     contexts: ["selection","link"],
     parentId: "Vuln",
     icons: {
