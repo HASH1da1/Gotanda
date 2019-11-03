@@ -32,7 +32,7 @@ browser.contextMenus.create({
     contexts: ["selection", "link"],
     parentId:"whois",
     icons:{
-        "16": "icons/icon/securitytrails"
+        "16": "icons/icon/securitytrails.png"
     }
 });
 
@@ -287,25 +287,6 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
-    id: "urlhaus",
-    title:"URL Haus",
-    contexts: ["selection", "link"],
-    parentId:"Domain",
-    icons: {
-        "16": "icons/icon/abusech.png"
-    }
-});
-
-browser.contextMenus.create({
-    id: "spyse",
-    title: "Spyse",
-    contexts: ["selection", "link"],
-    parentId: "Domain",
-    icons:{
-        "16":"icons/icon/spyse.png"
-    }
-});
 
 // create SSL certificate search context menus
 
@@ -389,6 +370,17 @@ browser.contextMenus.create({
         "16": "icons/icon/archive.png"
     }
 });
+/*
+browser.contextMenus.create({
+    id: "urlhaus",
+    title:"URL Haus",
+    contexts: ["selection", "link"],
+    parentId:"URL",
+    icons: {
+        "16": "icons/icon/abusech.png"
+    }
+});
+*/
 
 //create Vulnerability context menus
 browser.contextMenus.create({
@@ -660,7 +652,7 @@ switch (info.menuItemId){
         break;
 
     case "whoisds":
-        url = "https://whoisds.com/whois-lookup?domain="+artifact;
+        url = "https://whoisds.com/whois-lookup/lookup?domain="+artifact;
         break;
 
     //IPv4
@@ -749,10 +741,6 @@ switch (info.menuItemId){
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
 
-    case "spyse":
-        url = "https://spyse.com/search/domain?q="+artifact;
-        break;
-
     // certificate
     
     case "crt.sh":
@@ -785,11 +773,11 @@ switch (info.menuItemId){
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;
-    
+/*    
     case "url-haus":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
-
+*/
     //Vuln
     case "circl":
         url = "https://cve.circl.lu/cve/"+artifact;
