@@ -248,6 +248,16 @@ browser.contextMenus.create({
 });
 
 browser.contextMenus.create({
+    id: "hackertarget traceroute",
+    title: "HakcerTarget Traceroute",
+    contexts:["selection","link"],
+    parentId: "Domain",
+    icons:{
+        "16":"icons/icon/hackertarget.png"
+    }
+});
+
+browser.contextMenus.create({
     id:"domainwatch",
     title:"DomainWatch",
     contexts:["selection", "link"],
@@ -733,6 +743,10 @@ switch (info.menuItemId){
     
     case "shodan Domain":
         url = "https://www.shodan.io/search?query="+artifact;
+        break;
+
+    case "hackertarget traceroute":
+        url = "https://api.hackertarget.com/mtr/?q="+artifact;
         break;
 
     case "domainwatch":
