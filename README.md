@@ -52,7 +52,7 @@ When You want to search using some engine, You choose one of list.
 |LinkedIn|https://linkedin.com/|SNS|
 |Pinterest|https://www.pinterest.jp|SNS|
 
-SNS category is only account search.(without Time Line search)
+About Twitter and FaceBook could search timeline with any words.
 
 
 ## Misc
