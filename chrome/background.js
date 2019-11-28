@@ -13,17 +13,14 @@ chrome.contextMenus.create({
     "parentId": "whois",
 });
 
-browser.contextMenus.create({
-    id: "domainwatch whois",
-    title: "Domainwatch whois",
-    contexts: ["selection", "link"],
-    parentId:"whois",
-    icons:{
-        "16": "icons/icon/domainwatch.png"
-    }
+chrome.contextMenus.create({
+    "id": "domainwatch whois",
+    "title": "Domainwatch whois",
+    "contexts": ["selection", "link"],
+    "parentId":"whois",
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "securitytrails whois",
     title: "SecurityTrails",
     contexts: ["selection", "link"],
@@ -33,7 +30,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "whoisds",
     title: "WHOISDS",
     contexts:["selection", "link"],
@@ -45,20 +42,20 @@ browser.contextMenus.create({
 
 // create IP address context menus
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "IP",
     title: "IP",
     contexts: ["selection", "link"]
 })
 //IPv4
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "IPv4",
     title: "IPv4",
     contexts:["selection", "link"],
     parentId:"IP"
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"abuseIPDB",
     title:"AbuseIPDB",
     contexts:["selection", "link"],
@@ -68,7 +65,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"hackertarget IP",
     title:"HackerTarget",
     contexts:["selection", "link"],
@@ -78,7 +75,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"censys IP",
     title:"Censys",
     contexts:["selection", "link"],
@@ -88,7 +85,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"shodan",
     title:"Shodan IP",
     contexts:["selection", "link"],
@@ -98,7 +95,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"fofa",
     title:"FOFA IP",
     contexts:["selection", "link"],
@@ -108,7 +105,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"virustotal",
     title:"VirusTotal IP",
     contexts:["selection", "link"],
@@ -117,7 +114,7 @@ browser.contextMenus.create({
         "16": "icons/icon/virustotal.png"
     }
 });
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "greynoise",
     title: "Greynoise",
     contexts: ["selection", "link"],
@@ -127,7 +124,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "dnslytics ip",
     title: "DNSlytics",
     contexts: ["selection", "link"],
@@ -138,7 +135,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "tor ip",
     title: "Tor Relay IP",
     contexts: ["selection", "link"],
@@ -148,7 +145,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "threatcrowd ip",
     title: "ThreatCrowd IP",
     contexts: ["selection", "link"],
@@ -158,7 +155,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "ipalyzer",
     title: "IPAlyzer",
     contexts:["selection", "link"],
@@ -169,14 +166,14 @@ browser.contextMenus.create({
 });
 
 //IPv6
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "IPv6",
     title: "IPv6",
     contexts: ["selection", "link"],
     parentId: "IP"
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "dnslytics v6",
     title: "DNSlytics IPv6",
     contexts: ["selection", "link"],
@@ -186,7 +183,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "ultratools v6",
     title: "Ultratools v6",
     contexts: ["selection", "link"],
@@ -198,13 +195,13 @@ browser.contextMenus.create({
 
 
 // create ASN search context menus
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "asn",
     title: "ASN",
     contexts: ["selection", "link"]
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "dnslytics asn",
     title: "DNSlytics ASN",
     contexts: ["selection", "link"],
@@ -218,13 +215,13 @@ browser.contextMenus.create({
 
 // create Domain search context menus
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "Domain",
     title: "Domain",
     contexts:["selection", "link"]
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"censys Domain",
     title:"Censys",
     contexts:["selection", "link"],
@@ -234,7 +231,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"shodan Domain",
     title:"Shodan",
     contexts:["selection", "link"],
@@ -244,7 +241,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "hackertarget traceroute",
     title: "HakcerTarget Traceroute",
     contexts:["selection","link"],
@@ -254,7 +251,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"domainwatch",
     title:"DomainWatch",
     contexts:["selection", "link"],
@@ -264,7 +261,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"virustotal Domain",
     title:"VirusTotal",
     contexts:["selection", "link"],
@@ -274,7 +271,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "tor domain",
     title: "Tor Relay domain",
     contexts: ["selection", "link"],
@@ -284,7 +281,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "threatcrowd domain",
     title: "ThreatCrowd Domain",
     contexts: ["selection", "link"],
@@ -297,13 +294,13 @@ browser.contextMenus.create({
 
 // create SSL certificate search context menus
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "certificate",
     title:"SSL-Certificate",
     contexts:["selection", "link"],
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"crt.sh",
     title:"crt.sh",
     contexts:["selection","link"],
@@ -313,7 +310,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"ssl-bl",
     title:"Abuse.ch SSLBL-Hash",
     contexts:["selection", "link"],
@@ -325,13 +322,13 @@ browser.contextMenus.create({
 
 // create URL search context menus
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "URL",
     title: "URL",
     contexts: ["selection", "link"]
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"urlscan",
     title:"URLscan",
     contexts:["selection", "link"],
@@ -341,7 +338,7 @@ browser.contextMenus.create({
    }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"aguse",
     title:"aguse.jp",
     contexts:["selection","link"],
@@ -351,7 +348,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"check-host",
     title:"Check-Host",
     contexts:["selection","link"],
@@ -361,14 +358,14 @@ browser.contextMenus.create({
     }
 });
 /*
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"virustotal URL",
     title:"VirusTotal",
     contexts:["selection", "link"],
     parentId: "URL"
 });
 */
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "archive",
     title: "Wayback Machine",
     contexts: ["selection", "link"],
@@ -378,7 +375,7 @@ browser.contextMenus.create({
     }
 });
 /*
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "urlhaus",
     title:"URL Haus",
     contexts: ["selection", "link"],
@@ -390,13 +387,13 @@ browser.contextMenus.create({
 */
 
 //create Vulnerability context menus
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "Vuln",
     title: "Vuln",
     contexts:["selection", "link"]
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "circl",
     title: "CIRCL CVE",
     contexts: ["selection","link"],
@@ -406,7 +403,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "fortiguard",
     title: "FortiGuard CVE",
     contexts:["selection", "link"],
@@ -416,7 +413,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "sploitus",
     title: "Sploitus",
     contexts:["selection", "link"],
@@ -426,7 +423,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "vulmon",
     title:"Vulmon",
     contexts:["selection", "link"],
@@ -436,7 +433,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "cxsecurity",
     title: "CXSecurity",
     contexts:["selection", "link" ],
@@ -446,7 +443,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "vulncode",
     title: "Vulncode DB",
     contexts: ["selection", "link"],
@@ -457,13 +454,13 @@ browser.contextMenus.create({
 });
 
 // Create Malicious Software Search context menus
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "hash",
     title: "Hashes",
     contexts:["selection", "link"]
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "malshare",
     title: "Malshare",
     contexts:["selection", "link"],
@@ -473,7 +470,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "virustotal hash",
     title: "VirusTotal Hash",
     contexts: ["selection", "link"],
@@ -483,7 +480,7 @@ browser.contextMenus.create({
     }   
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"hybrid analysis",
     title: "Hybrid Analysis Hash",
     contexts:["selection", "link"],
@@ -498,21 +495,21 @@ browser.contextMenus.create({
 
 //create SNS search context menus
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "social",
     title: "Social",
     contexts:["selection", "link"]
 });
 
 //SNS Account search
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "social account",
     title: "Social Account",
     contexts:["selection","link"],
     parentId: "social"
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"twitter",
     title:"Twitter",
     contexts:["selection", "link"],
@@ -522,7 +519,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"qiita",
     title:"Qiita",
     contexts:["selection", "link"],
@@ -532,7 +529,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"github",
     title:"Github",
     contexts:["selection", "link"],
@@ -543,7 +540,7 @@ browser.contextMenus.create({
 });
 
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"facebook",
     title:"FaceBook",
     contexts:["selection", "link"],
@@ -553,7 +550,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"instagram",
     title:"Instagram",
     contexts:["selection", "link"],
@@ -563,7 +560,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id:"linkedin",
     title:"LinkedIn",
     contexts:["selection", "link"],
@@ -573,7 +570,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "pinterest",
     title: "Pinterest",
     contexts:["selection", "link"],
@@ -585,14 +582,14 @@ browser.contextMenus.create({
 
 
 //SNS Timeline search
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "timeline",
     title: "TimeLine",
     contexts:["selection", "link"],
     parentId: "social"
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "twittertl",
     title: "Twitter Timeline",
     contexts:["selection","link"],
@@ -602,7 +599,7 @@ browser.contextMenus.create({
     }
 });
 
-browser.contextMenus.create({
+chrome.contextMenus.create({
     id: "facebooktl",
     title: "FaceBook TimeLine",
     contexts:["selection","link"],
@@ -639,7 +636,7 @@ function optimizeArtifact(artifact){
 // when you click event listener function
 
 
-browser.contextMenus.onClicked.addListener((info, tab) => {
+chrome.contextMenus.onClicked.addListener((info, tab) => {
     // strip leading and trailing spaces
     if (info.selectionText) {
         artifact = String(info.selectionText).trim();
@@ -877,7 +874,7 @@ switch (info.menuItemId){
         break;
 
 }
-browser.tabs.create({url: url});
+chrome.tabs.create({url: url});
 
 navigator.clipboard.writeText(artifact);
 });
