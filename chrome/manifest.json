@@ -4,7 +4,7 @@
     "description": "OSINT addon",
     "version": "0.1",
     "icons": {
-        "128": "icons/128.png"
+        "128": "128.png"
     },
     "background": {
         "scripts": ["background.js"],

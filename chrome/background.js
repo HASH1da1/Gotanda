@@ -10,603 +10,453 @@ chrome.contextMenus.create({
     "id": "domaintools whois",
     "title": "Domain Tools",
     "contexts":["selection", "link"],
-    "parentId": "whois",
+    "parentId": "whois"
 });
 
 chrome.contextMenus.create({
     "id": "domainwatch whois",
     "title": "Domainwatch whois",
     "contexts": ["selection", "link"],
-    "parentId":"whois",
+    "parentId":"whois"
 });
 
 chrome.contextMenus.create({
-    id: "securitytrails whois",
-    title: "SecurityTrails",
-    contexts: ["selection", "link"],
-    parentId:"whois",
-    icons:{
-        "16": "icons/icon/securitytrails.png"
-    }
+    "id": "securitytrails whois",
+    "title": "SecurityTrails",
+    "contexts": ["selection", "link"],
+    "parentId":"whois"
 });
 
 chrome.contextMenus.create({
-    id: "whoisds",
-    title: "WHOISDS",
-    contexts:["selection", "link"],
-    parentId: "whois",
-    icons: {
-        "16": "icons/icon/whoisds.png"
-    }
+    "id": "whoisds",
+    "title": "WHOISDS",
+    "contexts":["selection", "link"],
+    "parentId": "whois"
 });
 
 // create IP address context menus
 
 chrome.contextMenus.create({
-    id: "IP",
-    title: "IP",
-    contexts: ["selection", "link"]
+    "id": "IP",
+    "title": "IP",
+    "contexts": ["selection", "link"]
 })
 //IPv4
 chrome.contextMenus.create({
-    id: "IPv4",
-    title: "IPv4",
-    contexts:["selection", "link"],
-    parentId:"IP"
+    "id": "IPv4",
+    "title": "IPv4",
+    "contexts":["selection", "link"],
+    "parentId":"IP"
 });
 
 chrome.contextMenus.create({
-    id:"abuseIPDB",
-    title:"AbuseIPDB",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/abuseipdb.png"
-    }
+    "id":"abuseIPDB",
+    "title":"AbuseIPDB",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4",
 });
 
 chrome.contextMenus.create({
-    id:"hackertarget IP",
-    title:"HackerTarget",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/hackertarget.png"
-    }
+    "id":"hackertarget IP",
+    "title":"HackerTarget",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id:"censys IP",
-    title:"Censys",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/censys.png"
-    }
+    "id":"censys IP",
+    "title":"Censys",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id:"shodan",
-    title:"Shodan IP",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/shodan.png"
-    }
+    "id":"shodan",
+    "title":"Shodan IP",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id:"fofa",
-    title:"FOFA IP",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons:{
-        "16": "icons/icon/fofa.png"
-    }
+    "id":"fofa",
+    "title":"FOFA IP",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id:"virustotal",
-    title:"VirusTotal IP",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons:{
-        "16": "icons/icon/virustotal.png"
-    }
+    "id":"virustotal",
+    "title":"VirusTotal IP",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 chrome.contextMenus.create({
-    id: "greynoise",
-    title: "Greynoise",
-    contexts: ["selection", "link"],
-    parentId: "IPv4",
-    icons:{
-        "16": "icons/icon/greynoise.png"
-    }
+    "id": "greynoise",
+    "title": "Greynoise",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id: "dnslytics ip",
-    title: "DNSlytics",
-    contexts: ["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/dnslytics.png"
-
-    }
+    "id": "dnslytics ip",
+    "title": "DNSlytics",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id: "tor ip",
-    title: "Tor Relay IP",
-    contexts: ["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/tor.ico"
-    }
+    "id": "tor ip",
+    "title": "Tor Relay IP",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id: "threatcrowd ip",
-    title: "ThreatCrowd IP",
-    contexts: ["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/threatcrowd.png"
-    }
+    "id": "threatcrowd ip",
+    "title": "ThreatCrowd IP",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
-    id: "ipalyzer",
-    title: "IPAlyzer",
-    contexts:["selection", "link"],
-    parentId: "IPv4",
-    icons: {
-        "16": "icons/icon/ipalyzer.png"
-    }
+    "id": "ipalyzer",
+    "title": "IPAlyzer",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 
 //IPv6
 chrome.contextMenus.create({
-    id: "IPv6",
-    title: "IPv6",
-    contexts: ["selection", "link"],
-    parentId: "IP"
+    "id": "IPv6",
+    "title": "IPv6",
+    "contexts": ["selection", "link"],
+    "parentId": "IP"
 });
 
 chrome.contextMenus.create({
-    id: "dnslytics v6",
-    title: "DNSlytics IPv6",
-    contexts: ["selection", "link"],
-    parentId: "IPv6",
-    icons: {
-        "16": "icons/icon/dnslytics.png"
-    }
+    "id": "dnslytics v6",
+    "title": "DNSlytics IPv6",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv6"
 });
 
 chrome.contextMenus.create({
-    id: "ultratools v6",
-    title: "Ultratools v6",
-    contexts: ["selection", "link"],
-    parentId: "IPv6",
-    icons: {
-        "16": "icons/icon/ultratools.png"
-    }
+    "id": "ultratools v6",
+    "title": "Ultratools v6",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv6"
 })
 
 
 // create ASN search context menus
 chrome.contextMenus.create({
-    id: "asn",
-    title: "ASN",
-    contexts: ["selection", "link"]
+    "id": "asn",
+    "title": "ASN",
+    "contexts": ["selection", "link"]
 });
 
 chrome.contextMenus.create({
-    id: "dnslytics asn",
-    title: "DNSlytics ASN",
-    contexts: ["selection", "link"],
-    parentId: "asn",
-    icons: {
-        "16": "icons/icon/dnslytics.png"
-    }
+    "id": "dnslytics asn",
+    "title": "DNSlytics ASN",
+    "contexts": ["selection", "link"],
+    "parentId": "asn"
 });
-
-
 
 // create Domain search context menus
 
 chrome.contextMenus.create({
-    id: "Domain",
-    title: "Domain",
-    contexts:["selection", "link"]
+    "id": "Domain",
+    "title": "Domain",
+    "contexts":["selection", "link"]
 });
 
 chrome.contextMenus.create({
-    id:"censys Domain",
-    title:"Censys",
-    contexts:["selection", "link"],
-    parentId: "Domain",
-    icons: {
-        "16": "icons/icon/censys.png"
-    }
+    "id":"censys Domain",
+    "title":"Censys",
+    "contexts":["selection", "link"],
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
-    id:"shodan Domain",
-    title:"Shodan",
-    contexts:["selection", "link"],
-    parentId: "Domain",
-    icons: {
-        "16": "icons/icon/shodan.png"
-    }
+    "id":"shodan Domain",
+    "title":"Shodan",
+    "contexts":["selection", "link"],
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
-    id: "hackertarget traceroute",
-    title: "HakcerTarget Traceroute",
-    contexts:["selection","link"],
-    parentId: "Domain",
-    icons:{
-        "16":"icons/icon/hackertarget.png"
-    }
+    "id": "hackertarget traceroute",
+    "title": "HakcerTarget Traceroute",
+    "contexts":["selection","link"],
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
-    id:"domainwatch",
-    title:"DomainWatch",
-    contexts:["selection", "link"],
-    parentId: "Domain",
-    icons: {
-        "16": "icons/icon/domainwatch.png"
-    }
+    "id":"domainwatch",
+    "title":"DomainWatch",
+    "contexts":["selection", "link"],
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
-    id:"virustotal Domain",
-    title:"VirusTotal",
-    contexts:["selection", "link"],
-    parentId: "Domain",
-    icons: {
-        "16": "icons/icon/virustotal.png"
-    }
+    "id":"virustotal Domain",
+    "title":"VirusTotal",
+    "contexts":["selection", "link"],
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
-    id: "tor domain",
-    title: "Tor Relay domain",
-    contexts: ["selection", "link"],
-    parentId: "Domain",
-    icons: {
-        "16": "icons/icon/tor.ico"
-    }
+    "id": "tor domain",
+    "title": "Tor Relay domain",
+    "contexts": ["selection", "link"],
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
-    id: "threatcrowd domain",
-    title: "ThreatCrowd Domain",
-    contexts: ["selection", "link"],
-    parentId: "Domain",
-    icons: {
-        "16": "icons/icon/threatcrowd.png"
-    }
+    "id": "threatcrowd domain",
+    "title": "ThreatCrowd Domain",
+    "contexts": ["selection", "link"],
+    "parentId": "Domain"
 });
 
 
 // create SSL certificate search context menus
 
 chrome.contextMenus.create({
-    id: "certificate",
-    title:"SSL-Certificate",
-    contexts:["selection", "link"],
+    "id": "certificate",
+    "title":"SSL-Certificate",
+    "contexts":["selection", "link"],
 });
 
 chrome.contextMenus.create({
-    id:"crt.sh",
-    title:"crt.sh",
-    contexts:["selection","link"],
-    parentId:"certificate",
-    icons:{
-        "16": "icons/icon/crtsh.png"
-    }
+    "id":"crt.sh",
+    "title":"crt.sh",
+    "contexts":["selection","link"],
+    "parentId":"certificate"
 });
 
 chrome.contextMenus.create({
-    id:"ssl-bl",
-    title:"Abuse.ch SSLBL-Hash",
-    contexts:["selection", "link"],
-    parentId:"certificate",
-    icons:{
-        "16": "icons/icon/abusech.png"
-    }
+    "id":"ssl-bl",
+    "title":"Abuse.ch SSLBL-Hash",
+    "contexts":["selection", "link"],
+    "parentId":"certificate"
 });
 
 // create URL search context menus
 
 chrome.contextMenus.create({
-    id: "URL",
-    title: "URL",
-    contexts: ["selection", "link"]
+    "id": "URL",
+    "title": "URL",
+    "contexts": ["selection", "link"]
 });
 
 chrome.contextMenus.create({
-    id:"urlscan",
-    title:"URLscan",
-    contexts:["selection", "link"],
-    parentId: "URL",
-    icons: {
-        "16": "icons/icon/urlscan.png"
-   }
+    "id":"urlscan",
+    "title":"URLscan",
+    "contexts":["selection", "link"],
+    "parentId": "URL"
 });
 
 chrome.contextMenus.create({
-    id:"aguse",
-    title:"aguse.jp",
-    contexts:["selection","link"],
-    parentId:"URL",
-    icons:{
-        "16":"icons/icon/aguse.png"
-    }
+    "id":"aguse",
+    "title":"aguse.jp",
+    "contexts":["selection","link"],
+    "parentId":"URL"
 });
 
 chrome.contextMenus.create({
-    id:"check-host",
-    title:"Check-Host",
-    contexts:["selection","link"],
-    parentId:"URL",
-    icons:{
-        "16":"icons/icon/checkhost.png"
-    }
+    "id":"check-host",
+    "title":"Check-Host",
+    "contexts":["selection","link"],
+    "parentId":"URL"
 });
 /*
 chrome.contextMenus.create({
-    id:"virustotal URL",
-    title:"VirusTotal",
-    contexts:["selection", "link"],
-    parentId: "URL"
+    "id":"virustotal URL",
+    "title":"VirusTotal",
+    "contexts":["selection", "link"],
+    "parentId": "URL"
 });
 */
 chrome.contextMenus.create({
-    id: "archive",
-    title: "Wayback Machine",
-    contexts: ["selection", "link"],
-    parentId: "URL",
-    icons: {
-        "16": "icons/icon/archive.png"
-    }
+    "id": "archive",
+    "title": "Wayback Machine",
+    "contexts": ["selection", "link"],
+    "parentId": "URL"
 });
 /*
 chrome.contextMenus.create({
-    id: "urlhaus",
-    title:"URL Haus",
-    contexts: ["selection", "link"],
-    parentId:"URL",
-    icons: {
-        "16": "icons/icon/abusech.png"
-    }
+    "id": "urlhaus",
+    "title":"URL Haus",
+    "contexts": ["selection", "link"],
+    "parentId":"URL"
 });
 */
 
 //create Vulnerability context menus
 chrome.contextMenus.create({
-    id: "Vuln",
-    title: "Vuln",
-    contexts:["selection", "link"]
+    "id": "Vuln",
+    "title": "Vuln",
+    "contexts":["selection", "link"]
 });
 
 chrome.contextMenus.create({
-    id: "circl",
-    title: "CIRCL CVE",
-    contexts: ["selection","link"],
-    parentId: "Vuln",
-    icons: {
-        "16":"icons/icon/circl.png"
-    }
+    "id": "circl",
+    "title": "CIRCL CVE",
+    "contexts": ["selection","link"],
+    "parentId": "Vuln"
 });
 
 chrome.contextMenus.create({
-    id: "fortiguard",
-    title: "FortiGuard CVE",
-    contexts:["selection", "link"],
-    parentId: "Vuln",
-    icons: {
-        "16": "icons/icon/fortiguard.png"
-    }
+    "id": "fortiguard",
+    "title": "FortiGuard CVE",
+    "contexts":["selection", "link"],
+    "parentId": "Vuln"
 });
 
 chrome.contextMenus.create({
-    id: "sploitus",
-    title: "Sploitus",
-    contexts:["selection", "link"],
-    parentId: "Vuln",
-    icons: {
-        "16": "icons/icon/sploitus.png"
-    }
+    "id": "sploitus",
+    "title": "Sploitus",
+    "contexts":["selection", "link"],
+    "parentId": "Vuln"
 });
 
 chrome.contextMenus.create({
-    id: "vulmon",
-    title:"Vulmon",
-    contexts:["selection", "link"],
-    parentId: "Vuln",
-    icons: {
-        "16": "icons/icon/vulmon.png"
-    }
+    "id": "vulmon",
+    "title":"Vulmon",
+    "contexts":["selection", "link"],
+    "parentId": "Vuln"
 });
 
 chrome.contextMenus.create({
-    id: "cxsecurity",
-    title: "CXSecurity",
-    contexts:["selection", "link" ],
-    parentId: "Vuln",
-    icons:{
-        "16": "icons/icon/cxsecurity.png"
-    }
+    "id": "cxsecurity",
+    "title": "CXSecurity",
+    "contexts":["selection", "link" ],
+    "parentId": "Vuln"
 });
 
 chrome.contextMenus.create({
-    id: "vulncode",
-    title: "Vulncode DB",
-    contexts: ["selection", "link"],
-    parentId: "Vuln",
-    icons: {
-        "16": "icons/icon/vulncode.png"  
-    }
+    "id": "vulncode",
+    "title": "Vulncode DB",
+    "contexts": ["selection", "link"],
+    "parentId": "Vuln"
 });
 
 // Create Malicious Software Search context menus
 chrome.contextMenus.create({
-    id: "hash",
-    title: "Hashes",
-    contexts:["selection", "link"]
+    "id": "hash",
+    "title": "Hashes",
+    "contexts":["selection", "link"]
 });
 
 chrome.contextMenus.create({
-    id: "malshare",
-    title: "Malshare",
-    contexts:["selection", "link"],
-    parentId: "hash",
-    icons: {
-        "16": "icons/icon/malshare.png"
-    }
+    "id": "malshare",
+    "title": "Malshare",
+    "contexts":["selection", "link"],
+    "parentId": "hash"
 });
 
 chrome.contextMenus.create({
-    id: "virustotal hash",
-    title: "VirusTotal Hash",
-    contexts: ["selection", "link"],
-    parentId: "hash",
-    icons:{
-        "16": "icons/icon/virustotal.png"
-    }   
+    "id": "virustotal hash",
+    "title": "VirusTotal Hash",
+    "contexts": ["selection", "link"],
+    "parentId": "hash" 
 });
 
 chrome.contextMenus.create({
-    id:"hybrid analysis",
-    title: "Hybrid Analysis Hash",
-    contexts:["selection", "link"],
-    parentId:"hash",
-    icons:{
-        "16": "icons/icon/hybridanalysis.png"
-    }
+    "id":"hybrid analysis",
+    "title": "Hybrid Analysis Hash",
+    "contexts":["selection", "link"],
+    "parentId":"hash"
 });
-
-
-
 
 //create SNS search context menus
 
 chrome.contextMenus.create({
-    id: "social",
-    title: "Social",
-    contexts:["selection", "link"]
+    "id": "social",
+    "title": "Social",
+    "contexts":["selection", "link"]
 });
 
 //SNS Account search
 chrome.contextMenus.create({
-    id: "social account",
-    title: "Social Account",
-    contexts:["selection","link"],
-    parentId: "social"
+    "id": "social account",
+    "title": "Social Account",
+    "contexts":["selection","link"],
+    "parentId": "social"
 });
 
 chrome.contextMenus.create({
-    id:"twitter",
-    title:"Twitter",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/twitter.png"
-    }
+    "id":"twitter",
+    "title":"Twitter",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 chrome.contextMenus.create({
-    id:"qiita",
-    title:"Qiita",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/qiita.png"
-    }
+    "id":"qiita",
+    "title":"Qiita",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 chrome.contextMenus.create({
-    id:"github",
-    title:"Github",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/github.png"
-    }
+    "id":"github",
+    "title":"Github",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 
 chrome.contextMenus.create({
-    id:"facebook",
-    title:"FaceBook",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/facebook.png"
-    }
+    "id":"facebook",
+    "title":"FaceBook",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 chrome.contextMenus.create({
-    id:"instagram",
-    title:"Instagram",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/instagram.png"
-    }
+    "id":"instagram",
+    "title":"Instagram",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 chrome.contextMenus.create({
-    id:"linkedin",
-    title:"LinkedIn",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/linkedin.png"
-    }
+    "id":"linkedin",
+    "title":"LinkedIn",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 chrome.contextMenus.create({
-    id: "pinterest",
-    title: "Pinterest",
-    contexts:["selection", "link"],
-    parentId: "social account",
-    icons: {
-        "16": "icons/icon/pinterest.png"
-    }
+    "id": "pinterest",
+    "title": "Pinterest",
+    "contexts":["selection", "link"],
+    "parentId": "social account"
 });
 
 
 //SNS Timeline search
 chrome.contextMenus.create({
-    id: "timeline",
-    title: "TimeLine",
-    contexts:["selection", "link"],
-    parentId: "social"
+    "id": "timeline",
+    "title": "TimeLine",
+    "contexts":["selection", "link"],
+    "parentId": "social"
 });
 
 chrome.contextMenus.create({
-    id: "twittertl",
-    title: "Twitter Timeline",
-    contexts:["selection","link"],
-    parentId: "timeline",
-    icons:{
-        "16":"icons/icon/twitter.png"
-    }
+    "id": "twittertl",
+    "title": "Twitter Timeline",
+    "contexts":["selection","link"],
+    "parentId": "timeline"
 });
 
 chrome.contextMenus.create({
-    id: "facebooktl",
-    title: "FaceBook TimeLine",
-    contexts:["selection","link"],
-    parentId: "timeline",
-    icons:{
-        "16":"icons/icon/facebook.png"
-    }
+    "id": "facebooktl",
+    "title": "FaceBook TimeLine",
+    "contexts":["selection","link"],
+    "parentId": "timeline"
 });
 
 
@@ -616,7 +466,7 @@ var artifact = "";
 var v6URI = "";
 
 //refang function
-function optimizeArtifact(artifact){
+function refangArtifact(artifact){
     while(artifact.includes("[.]")){
         artifact = artifact.replace("[.]",".");
     }
@@ -634,8 +484,6 @@ function optimizeArtifact(artifact){
 
 
 // when you click event listener function
-
-
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     // strip leading and trailing spaces
     if (info.selectionText) {
@@ -649,7 +497,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         artifact = src.host;
     }
     
-    artifact = optimizeArtifact(artifact);
+    artifact = refangArtifact(artifact);
 
 switch (info.menuItemId){
     //whois
@@ -875,6 +723,4 @@ switch (info.menuItemId){
 
 }
 chrome.tabs.create({url: url});
-
-navigator.clipboard.writeText(artifact);
 });

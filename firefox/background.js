@@ -622,7 +622,7 @@ var artifact = "";
 var v6URI = "";
 
 //refang function
-function optimizeArtifact(artifact){
+function refangArtifact(artifact){
     while(artifact.includes("[.]")){
         artifact = artifact.replace("[.]",".");
     }
@@ -655,7 +655,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
         artifact = src.host;
     }
     
-    artifact = optimizeArtifact(artifact);
+    artifact = refangArtifact(artifact);
 
 switch (info.menuItemId){
     //whois
