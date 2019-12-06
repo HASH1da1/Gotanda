@@ -33,6 +33,7 @@ When You want to search using some engine, You choose one of list.
 |VirusTotal|https://virustotal.com/|IP, Domain, URL,Hash|
 |GreyNoise|https://viz.greynoise.io/|IPv4|
 |IPAlyzer|https://ipalyzer.com/|IPv4|
+|Kaspersky Threat Intel|https://opentip.kaspersky.com/|IP, URL, Domain, Hash|
 |Tor Relay Search|https://metrics.torproject.org/|IP,Domain|
 |Domain Watch|https://domainwat.ch/|Domain, Email,whois lookup|
 |crt.sh|https://crt.sh/|SSL-certificate|
