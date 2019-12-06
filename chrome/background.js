@@ -125,6 +125,13 @@ chrome.contextMenus.create({
     "parentId": "IPv4"
 });
 
+chrome.contextMenus.create({
+    "id": "kaspersky ip",
+    "title": "Kaspersky Threat Intel IP",
+    "contexts": ["selection","link"],
+    "parentId": "IPv4"
+});
+
 //IPv6
 chrome.contextMenus.create({
     "id": "IPv6",
@@ -219,6 +226,13 @@ chrome.contextMenus.create({
     "parentId": "Domain"
 });
 
+chrome.contextMenus.create({
+    "id": "kaspersky domain",
+    "title": "Kaspersky Threat Intel Domain",
+    "contexts": ["selection","link"],
+    "parentId": "Domain"
+});
+
 
 // create SSL certificate search context menus
 
@@ -292,6 +306,13 @@ chrome.contextMenus.create({
     "parentId":"URL"
 });
 */
+
+chrome.contextMenus.create({
+    "id": "kaspersky url",
+    "title": "Kaspersky Threat Intel URL",
+    "contexts":["selection","link"],
+    "parentId": "URL"
+});
 
 //create Vulnerability context menus
 chrome.contextMenus.create({
@@ -368,6 +389,13 @@ chrome.contextMenus.create({
     "title": "Hybrid Analysis Hash",
     "contexts":["selection", "link"],
     "parentId":"hash"
+});
+
+chrome.contextMenus.create({
+    "id":"kaspersky hash",
+    "title": "Kaspersky Threat Intel Hash",
+    "contexts": ["selection","link"],
+    "parentId": "hash"
 });
 
 //create SNS search context menus
@@ -561,6 +589,10 @@ switch (info.menuItemId){
         url = "https://ipalyzer.com/"+artifact;
         break;
 
+    case "kaspersky ip":
+        url = "https://opentip.kaspersky.com/"+artifact;
+        break;
+
     //IPv6
 
     case "dnslytics v6":
@@ -607,6 +639,10 @@ switch (info.menuItemId){
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
 
+    case "kaspersky domain":
+        url = "https://opentip.kaspersky.com/"+artifact;
+        break;
+
     // certificate
     
     case "crt.sh":
@@ -644,6 +680,11 @@ switch (info.menuItemId){
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
 */
+
+    case "kaspersky url":
+        url = "https://opentip.kaspersky.com/"+artifact;
+        break;
+
     //Vuln
     case "circl":
         url = "https://cve.circl.lu/cve/"+artifact;
@@ -680,6 +721,10 @@ switch (info.menuItemId){
 
     case "hybrid analysis":
         url = "https://www.hybrid-analysis.com/sample/"+artifact;
+        break;
+
+    case "kaspersky hash":
+        url = "https://opentip.kaspersky.com/"+artifact;
         break;
 
     //SNS
