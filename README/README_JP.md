@@ -55,6 +55,7 @@ Webページ中のURL,Domain等をハイライトして右クリックすると�
 |Instagram|https://www.instagram.com/|SNS|
 |LinkedIn|https://linkedin.com/|SNS|
 |Pinterest|https://www.pinterest.jp|SNS|
+|reddit|https://www.reddit.com/|SNS|
 
 SNSに関してはアカウントとタイムラインでの検索が可能です
 
