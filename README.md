@@ -60,6 +60,7 @@ When You want to search using some engine, You choose one of list.
 |Instagram|https://www.instagram.com/|SNS|
 |LinkedIn|https://linkedin.com/|SNS|
 |Pinterest|https://www.pinterest.jp|SNS|
+|reddit|https://www.reddit.com/|SNS|
 
 About Twitter and FaceBook could search timeline with any words.
 
