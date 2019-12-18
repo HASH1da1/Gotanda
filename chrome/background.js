@@ -487,6 +487,13 @@ chrome.contextMenus.create({
     "parentId": "timeline"
 });
 
+chrome.contextMenus.create({
+    "id": "reddit",
+    "title": "reddit",
+    "contexts":["selection","link"],
+    "parentId": "timeline"
+});
+
 
 //create empty variables
 var url = "";
@@ -764,6 +771,10 @@ switch (info.menuItemId){
 
     case "facebooktl":
         url = "https://www.facebook.com/search/top/?q="+artifact;
+        break;
+    
+    case "reddit":
+        url = "https://www.reddit.com/search/?q="+artifact;
         break;
 
 }
