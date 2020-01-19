@@ -132,6 +132,13 @@ chrome.contextMenus.create({
     "parentId": "IPv4"
 });
 
+chrome.contextMenus.create({
+    "id": "bgpview ip",
+    "title": "BGPView IP",
+    "contexts": ["selection", "link"],
+    "parentId": "IPv4"
+});
+
 //IPv6
 chrome.contextMenus.create({
     "id": "IPv6",
@@ -165,6 +172,13 @@ chrome.contextMenus.create({
 chrome.contextMenus.create({
     "id": "dnslytics asn",
     "title": "DNSlytics ASN",
+    "contexts": ["selection", "link"],
+    "parentId": "asn"
+});
+
+chrome.contextMenus.create({
+    "id": "bgpview asn",
+    "title": "BGPView ASN",
     "contexts": ["selection", "link"],
     "parentId": "asn"
 });
@@ -600,6 +614,9 @@ switch (info.menuItemId){
         url = "https://opentip.kaspersky.com/"+artifact;
         break;
 
+    case "bgpview ip":
+        url = "https://bgpview.io/ip/"+artifact;
+        break;
     //IPv6
 
     case "dnslytics v6":
@@ -613,6 +630,10 @@ switch (info.menuItemId){
     //ASN
     case "dnslytics asn":
         url ="https://dnslytics.com/bgp/"+artifact.toLowerCase();
+        break;
+
+    case "bgpview asn":
+        url = "https://bgpview.io/asn"+artifact;
         break;
     
         
