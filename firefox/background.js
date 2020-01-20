@@ -181,6 +181,16 @@ browser.contextMenus.create({
     }
 });
 
+browser.contextMenus.create({
+    id: "bgpview ip",
+    title: "BGPView IP",
+    contexts: ["selection", "link"],
+    parentId: "IPv4",
+    icons:{
+        "16": "icons/icon/bgpview.png"
+    }
+});
+
 //IPv6
 browser.contextMenus.create({
     id: "IPv6",
@@ -224,6 +234,16 @@ browser.contextMenus.create({
     parentId: "asn",
     icons: {
         "16": "icons/icon/dnslytics.png"
+    }
+});
+
+browser.contextMenus.create({
+    id: "bgpview asn",
+    title: "BGPView ASN",
+    contexts: ["selection", "link"],
+    parentId: "asn",
+    icons:{
+        "16": "icons/icon/bgpview.png"
     }
 });
 
@@ -772,6 +792,10 @@ switch (info.menuItemId){
     case "kaspersky ip":
         url = "https://opentip.kaspersky.com/"+artifact;
         break;
+    
+    case "bgpview ip":
+        url = "https://bgpview.io/ip/"+artifact;
+        break;
 
     //IPv6
 
@@ -788,6 +812,9 @@ switch (info.menuItemId){
         url ="https://dnslytics.com/bgp/"+artifact.toLowerCase();
         break;
     
+    case "bgpview asn":
+        url = "https://bgpview.io/asn"+artifact;
+        break;
         
     //Domain
 
