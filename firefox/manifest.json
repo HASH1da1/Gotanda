@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name":"Gotanda",
-    "version":"1.5.6",
+    "version":"1.5.7",
     "description":"OSINT addon",
     "icons":{ 
         "128":"icons/128.png"
