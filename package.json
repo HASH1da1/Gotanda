@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/hash1da1/gotanda/issues"
   },
-  "homepage": "https://github.com/hash1da1/gotanda#readme"
+  "homepage": "https://github.com/hash1da1/gotanda#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  }
 }
