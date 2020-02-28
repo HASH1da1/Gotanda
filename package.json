@@ -1,0 +1,24 @@
+{
+  "name": "gotanda",
+  "version": "2.0.0",
+  "description": "OSINT Addon",
+  "main": "background.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hash1da1/gotanda.git"
+  },
+  "keywords": [
+    "\"OSINT\"",
+    "\"Web",
+    "Extension\""
+  ],
+  "author": "HASH1da1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hash1da1/gotanda/issues"
+  },
+  "homepage": "https://github.com/hash1da1/gotanda#readme"
+}
