@@ -4,6 +4,8 @@
   "description": "OSINT Addon",
   "main": "background.js",
   "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
     "test": "npm test"
   },
   "repository": {
