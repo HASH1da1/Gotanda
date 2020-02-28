@@ -695,11 +695,6 @@ switch (info.menuItemId){
         url = "https://check-host.net/ip-info?host="+artifact;
         break;
 
-/*  TODO convert URL to SHA256
-    case "virustotal URL":
-        url ="https://virustotal.com/#/home/url/"+artifact;
-        break;
-*/
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;

@@ -1,6 +1,4 @@
 # Gotanda is OSINT extension
-[日本語](README/README_JP.md "JP") 
-
 
 Gotanda is OSINT(Open Source Intelligence) Web Extension for Firefox/Chrome.
 
