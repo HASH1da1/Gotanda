@@ -716,11 +716,6 @@ switch (info.menuItemId){
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;
-/*    
-    case "url-haus":
-        url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
-        break;
-*/
 
     case "kaspersky url":
         url = "https://opentip.kaspersky.com/"+artifact;
