@@ -6,7 +6,11 @@ This Web Extension could search OSINT information from some IOC in web page.(IP,
 
 This Repository partly the studying and JavaScript practice.
 
-Download from [here](https://addons.mozilla.org/ja/firefox/addon/gotanda/ "here").
+Download link below.
+
+- [FireFox](https://addons.mozilla.org/ja/firefox/addon/gotanda/)
+
+- [Chrome](https://chrome.google.com/webstore/detail/gotanda/jbmdcdfnnpenkgliplbglfpninigbiml)
 
 ## Usage
 
