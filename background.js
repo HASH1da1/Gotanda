@@ -247,6 +247,13 @@ chrome.contextMenus.create({
     "parentId": "Domain"
 });
 
+chrome.contextMenus.create({
+    "id": "urlhaus domain",
+    "title": "URLHaus Domain",
+    "contexts": ["selection", "link"],
+    "parentID": "Domain"
+});
+
 
 // create SSL certificate search context menus
 
@@ -676,6 +683,10 @@ switch (info.menuItemId){
 
     case "kaspersky domain":
         url = "https://opentip.kaspersky.com/"+artifact;
+        break;
+    
+    case "urlhaus domain":
+        url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
 
     // certificate
