@@ -286,18 +286,25 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id":"aguse",
-    "title":"aguse.jp",
-    "contexts":["selection","link"],
-    "parentId":"URL"
-});
-
-chrome.contextMenus.create({
     "id":"check-host",
     "title":"Check-Host",
     "contexts":["selection","link"],
     "parentId":"URL"
 });
+
+chrome.contextMenus.create({
+    "id": "Proxy",
+    "title": "Proxy Access",
+    "contexts": ["selection", "link"]
+})
+
+chrome.contextMenus.create({
+    "id":"aguse",
+    "title":"aguse.jp",
+    "contexts":["selection","link"],
+    "parentId":"Proxy"
+});
+
 /*
 chrome.contextMenus.create({
     "id":"virustotal URL",

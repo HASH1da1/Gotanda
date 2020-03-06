@@ -1,4 +1,4 @@
-# Gotanda is OSINT extension
+# Gotanda 
 
 Gotanda is OSINT(Open Source Intelligence) Web Extension for Firefox/Chrome.
 
@@ -39,7 +39,6 @@ When You want to search using some engine, You choose one of list.
 |Tor Relay Search|https://metrics.torproject.org/|IP,Domain|
 |Domain Watch|https://domainwat.ch/|Domain, Email,whois lookup|
 |crt.sh|https://crt.sh/|SSL-certificate|
-|Abuse.ch|https://sslbl.abuse.ch/|SSL-cert hash|
 |DNSlytics|https://dnslytics.com/|IPv4,IPv6,ASN|
 |URLscan|https://urlscan.io/|URL|
 |Ultratools|https://www.ultratools.com/|IPv6|
@@ -66,10 +65,11 @@ When You want to search using some engine, You choose one of list.
 
 About Twitter and FaceBook could search timeline with any words.
 
+## Similar tools
+
 
 ## Misc
 
 **This extension is optimized for the Japanese environment.**
 
-Got and a 
 
