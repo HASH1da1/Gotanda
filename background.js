@@ -247,6 +247,13 @@ chrome.contextMenus.create({
     "parentId": "Domain"
 });
 
+chrome.contextMenus.create({
+    "id": "urlhaus domain",
+    "title": "URLHaus Domain",
+    "contexts": ["selection", "link"],
+    "parentID": "Domain"
+});
+
 
 // create SSL certificate search context menus
 
@@ -286,18 +293,25 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id":"aguse",
-    "title":"aguse.jp",
-    "contexts":["selection","link"],
-    "parentId":"URL"
-});
-
-chrome.contextMenus.create({
     "id":"check-host",
     "title":"Check-Host",
     "contexts":["selection","link"],
     "parentId":"URL"
 });
+
+chrome.contextMenus.create({
+    "id": "Proxy",
+    "title": "Proxy Access",
+    "contexts": ["selection", "link"]
+})
+
+chrome.contextMenus.create({
+    "id":"aguse",
+    "title":"aguse.jp",
+    "contexts":["selection","link"],
+    "parentId":"Proxy"
+});
+
 /*
 chrome.contextMenus.create({
     "id":"virustotal URL",
@@ -670,6 +684,10 @@ switch (info.menuItemId){
     case "kaspersky domain":
         url = "https://opentip.kaspersky.com/"+artifact;
         break;
+    
+    case "urlhaus domain":
+        url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
+        break;
 
     // certificate
     
@@ -698,11 +716,6 @@ switch (info.menuItemId){
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;
-/*    
-    case "url-haus":
-        url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
-        break;
-*/
 
     case "kaspersky url":
         url = "https://opentip.kaspersky.com/"+artifact;
