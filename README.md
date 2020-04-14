@@ -30,7 +30,6 @@ When You want to search using some engine, You choose one of list.
 |HackerTarget|https://hackertarget.com/|IPv4|
 |Censys|https://censys.io/|IP, Domain|
 |Shodan|https://shodan.io/|IP, Domain|
-|crt.sh|https://crt.sh/|Certificate|
 |FOFA|https://fofa.so/|IP, Domain|
 |VirusTotal|https://virustotal.com/|IP, Domain, URL,Hash|
 |GreyNoise|https://viz.greynoise.io/|IPv4|
@@ -64,8 +63,6 @@ When You want to search using some engine, You choose one of list.
 |reddit|https://www.reddit.com/|SNS|
 
 About Twitter and FaceBook could search timeline with any words.
-
-## Similar tools
 
 
 ## Misc
