@@ -37,6 +37,7 @@ When You want to search using some engine, You choose one of list.
 |Tor Relay Search|https://metrics.torproject.org/|IP,Domain|
 |Domain Watch|https://domainwat.ch/|Domain, Email,whois lookup|
 |crt.sh|https://crt.sh/|SSL-certificate|
+|SecurityHeaders|https://securityheaders.com/|URL, Domain|
 |DNSlytics|https://dnslytics.com/|IPv4,IPv6,ASN|
 |URLscan|https://urlscan.io/|URL|
 |Ultratools|https://www.ultratools.com/|IPv6|
