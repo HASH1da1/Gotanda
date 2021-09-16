@@ -240,6 +240,13 @@ chrome.contextMenus.create({
     "parentID": "Domain"
 });
 
+chrome.contextMenus.create({
+    "id": "Securityheaders domain",
+    "title": "Security Headers Domain",
+    "contexts": ["selection", "link"],
+    "parentID": "Domain"
+});
+
 
 // create SSL certificate search context menus
 
@@ -320,6 +327,13 @@ chrome.contextMenus.create({
     "parentId":"URL"
 });
 */
+
+chrome.contextMenus.create({
+    "id": "securityheaders url",
+    "title": "Security Headers URL",
+    "contexts": ["selection", "link"],
+    "parentID": "URL"
+});
 
 //create Vulnerability context menus
 chrome.contextMenus.create({
@@ -653,6 +667,10 @@ switch (info.menuItemId){
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
 
+    case "securityheaders domain":
+        url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
+        break;
+
     // certificate
     
     case "crt.sh":
@@ -679,6 +697,10 @@ switch (info.menuItemId){
 
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
+        break;
+
+    case "securityheaders url":
+        url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
 
     //Vuln
