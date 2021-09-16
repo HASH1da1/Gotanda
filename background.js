@@ -126,13 +126,6 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id": "kaspersky ip",
-    "title": "Kaspersky Threat Intel IP",
-    "contexts": ["selection","link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
     "id": "bgpview ip",
     "title": "BGPView IP",
     "contexts": ["selection", "link"],
@@ -241,15 +234,15 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id": "kaspersky domain",
-    "title": "Kaspersky Threat Intel Domain",
-    "contexts": ["selection","link"],
-    "parentId": "Domain"
+    "id": "urlhaus domain",
+    "title": "URLHaus Domain",
+    "contexts": ["selection", "link"],
+    "parentID": "Domain"
 });
 
 chrome.contextMenus.create({
-    "id": "urlhaus domain",
-    "title": "URLHaus Domain",
+    "id": "Securityheaders domain",
+    "title": "Security Headers Domain",
     "contexts": ["selection", "link"],
     "parentID": "Domain"
 });
@@ -336,10 +329,10 @@ chrome.contextMenus.create({
 */
 
 chrome.contextMenus.create({
-    "id": "kaspersky url",
-    "title": "Kaspersky Threat Intel URL",
-    "contexts":["selection","link"],
-    "parentId": "URL"
+    "id": "securityheaders url",
+    "title": "Security Headers URL",
+    "contexts": ["selection", "link"],
+    "parentID": "URL"
 });
 
 //create Vulnerability context menus
@@ -417,13 +410,6 @@ chrome.contextMenus.create({
     "title": "Hybrid Analysis Hash",
     "contexts":["selection", "link"],
     "parentId":"hash"
-});
-
-chrome.contextMenus.create({
-    "id":"kaspersky hash",
-    "title": "Kaspersky Threat Intel Hash",
-    "contexts": ["selection","link"],
-    "parentId": "hash"
 });
 
 //create SNS search context menus
@@ -624,10 +610,6 @@ switch (info.menuItemId){
         url = "https://ipalyzer.com/"+artifact;
         break;
 
-    case "kaspersky ip":
-        url = "https://opentip.kaspersky.com/"+artifact;
-        break;
-
     case "bgpview ip":
         url = "https://bgpview.io/ip/"+artifact;
         break;
@@ -680,13 +662,13 @@ switch (info.menuItemId){
     case "threatcrowd domain":
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
-
-    case "kaspersky domain":
-        url = "https://opentip.kaspersky.com/"+artifact;
-        break;
-    
+   
     case "urlhaus domain":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
+        break;
+
+    case "securityheaders domain":
+        url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
 
     // certificate
@@ -717,8 +699,8 @@ switch (info.menuItemId){
         url = "https://web.archive.org/web/*/"+artifact;
         break;
 
-    case "kaspersky url":
-        url = "https://opentip.kaspersky.com/"+artifact;
+    case "securityheaders url":
+        url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
 
     //Vuln
@@ -757,10 +739,6 @@ switch (info.menuItemId){
 
     case "hybrid analysis":
         url = "https://www.hybrid-analysis.com/sample/"+artifact;
-        break;
-
-    case "kaspersky hash":
-        url = "https://opentip.kaspersky.com/"+artifact;
         break;
 
     //SNS

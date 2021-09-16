@@ -14,7 +14,7 @@ Download link below.
 
 ## Usage
 
-Right click highlighted IOC strings, It will show contextmenus.
+Right click highlighted IOC strings, It will show contextmenus.(Or right clicking any link. )
 
 When You want to search using some engine, You choose one of list.
 
@@ -34,10 +34,10 @@ When You want to search using some engine, You choose one of list.
 |VirusTotal|https://virustotal.com/|IP, Domain, URL,Hash|
 |GreyNoise|https://viz.greynoise.io/|IPv4|
 |IPAlyzer|https://ipalyzer.com/|IPv4|
-|Kaspersky Threat Intel|https://opentip.kaspersky.com/|IP, URL, Domain, Hash|
 |Tor Relay Search|https://metrics.torproject.org/|IP,Domain|
 |Domain Watch|https://domainwat.ch/|Domain, Email,whois lookup|
 |crt.sh|https://crt.sh/|SSL-certificate|
+|SecurityHeaders|https://securityheaders.com/|URL, Domain|
 |DNSlytics|https://dnslytics.com/|IPv4,IPv6,ASN|
 |URLscan|https://urlscan.io/|URL|
 |Ultratools|https://www.ultratools.com/|IPv6|
