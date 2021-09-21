@@ -241,7 +241,7 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id": "Securityheaders domain",
+    "id": "securityheaders domain",
     "title": "Security Headers Domain",
     "contexts": ["selection", "link"],
     "parentID": "Domain"
@@ -296,7 +296,7 @@ chrome.contextMenus.create({
     "id": "Proxy",
     "title": "Proxy Access",
     "contexts": ["selection", "link"]
-})
+});
 
 chrome.contextMenus.create({
     "id":"aguse",
@@ -313,12 +313,14 @@ chrome.contextMenus.create({
     "parentId": "URL"
 });
 */
+
 chrome.contextMenus.create({
     "id": "archive",
     "title": "Wayback Machine",
     "contexts": ["selection", "link"],
     "parentId": "URL"
 });
+
 /*
 chrome.contextMenus.create({
     "id": "urlhaus",
