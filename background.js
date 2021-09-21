@@ -237,14 +237,14 @@ chrome.contextMenus.create({
     "id": "urlhaus domain",
     "title": "URLHaus Domain",
     "contexts": ["selection", "link"],
-    "parentID": "Domain"
+    "parentId": "Domain"
 });
 
 chrome.contextMenus.create({
     "id": "securityheaders domain",
     "title": "Security Headers Domain",
     "contexts": ["selection", "link"],
-    "parentID": "Domain"
+    "parentId": "Domain"
 });
 
 
@@ -334,7 +334,7 @@ chrome.contextMenus.create({
     "id": "securityheaders url",
     "title": "Security Headers URL",
     "contexts": ["selection", "link"],
-    "parentID": "URL"
+    "parentId": "URL"
 });
 
 //create Vulnerability context menus
