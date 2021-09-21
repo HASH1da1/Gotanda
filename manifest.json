@@ -15,5 +15,12 @@
         "contextMenus",
         "tabs",
         "background"
-    ]
+    ],
+    "browser_action":{
+        "default_icon":{
+            "19": "image/19.png",
+            "38": "image/38.png"
+        },
+        "default_title": "Gotanda"
+    }
 }
