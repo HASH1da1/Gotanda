@@ -233,6 +233,7 @@ chrome.contextMenus.create({
     "parentId": "Domain"
 });
 
+/*
 chrome.contextMenus.create({
     "id": "urlhaus domain",
     "title": "URLHaus Domain",
@@ -246,7 +247,7 @@ chrome.contextMenus.create({
     "contexts": ["selection", "link"],
     "parentId": "Domain"
 });
-
+*/
 
 // create SSL certificate search context menus
 
@@ -664,7 +665,7 @@ switch (info.menuItemId){
     case "threatcrowd domain":
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
-   
+/*   
     case "urlhaus domain":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
@@ -672,7 +673,7 @@ switch (info.menuItemId){
     case "securityheaders domain":
         url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
-
+*/
     // certificate
     
     case "crt.sh":
@@ -700,11 +701,11 @@ switch (info.menuItemId){
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;
-
+/*
     case "securityheaders url":
         url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
-
+*/
     //Vuln
     case "circl":
         url = "https://cve.circl.lu/cve/"+artifact;
