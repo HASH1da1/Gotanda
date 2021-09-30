@@ -329,7 +329,7 @@ chrome.contextMenus.create({
     "contexts": ["selection", "link"],
     "parentId":"URL"
 });
-*/
+
 
 chrome.contextMenus.create({
     "id": "securityheaders url",
@@ -337,6 +337,7 @@ chrome.contextMenus.create({
     "contexts": ["selection", "link"],
     "parentId": "URL"
 });
+*/
 
 //create Vulnerability context menus
 chrome.contextMenus.create({
@@ -665,7 +666,12 @@ switch (info.menuItemId){
     case "threatcrowd domain":
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
+<<<<<<< HEAD
 /*   
+=======
+
+/*
+>>>>>>> 8d2778a18e1bfc7154f979e8ee7c8742aa113dc2
     case "urlhaus domain":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
