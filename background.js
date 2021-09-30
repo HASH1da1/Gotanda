@@ -675,7 +675,6 @@ switch (info.menuItemId){
         url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
 
-        
     // certificate
     
     case "crt.sh":
