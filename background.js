@@ -666,7 +666,7 @@ switch (info.menuItemId){
     case "threatcrowd domain":
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
-        
+
     case "urlhaus domain":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
