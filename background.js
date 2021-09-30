@@ -666,12 +666,7 @@ switch (info.menuItemId){
     case "threatcrowd domain":
         url= "https://www.threatcrowd.org/domain.php?domain="+artifact;
         break;
-<<<<<<< HEAD
-/*   
-=======
 
-/*
->>>>>>> 8d2778a18e1bfc7154f979e8ee7c8742aa113dc2
     case "urlhaus domain":
         url = "https://urlhaus.abuse.ch/browse.php?search="+artifact;
         break;
@@ -679,7 +674,7 @@ switch (info.menuItemId){
     case "securityheaders domain":
         url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
         break;
-*/
+
     // certificate
     
     case "crt.sh":
