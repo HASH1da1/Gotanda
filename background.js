@@ -426,33 +426,6 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id":"check-host",
-    "title":"Check-Host",
-    "contexts":["selection","link"],
-    "parentId":"URL"
-});
-
-chrome.contextMenus.create({
-    "id": "Proxy",
-    "title": "Proxy Access",
-    "contexts": ["selection", "link"]
-});
-
-chrome.contextMenus.create({
-    "id":"aguse",
-    "title":"aguse.jp",
-    "contexts":["selection","link"],
-    "parentId":"Proxy"
-});
-
-chrome.contextMenus.create({
-    "id": "archive",
-    "title": "Wayback Machine",
-    "contexts": ["selection", "link"],
-    "parentId": "URL"
-});
-
-chrome.contextMenus.create({
     "id": "archive",
     "title": "Wayback Machine",
     "contexts": ["selection", "link"],
@@ -929,11 +902,7 @@ switch (info.menuItemId){
     case "archive":
         url = "https://web.archive.org/web/*/"+artifact;
         break;
-/*
-    case "securityheaders url":
-        url = "https://securityheaders.com/?q="+artifact+"&followRedirects=on";
-        break;
-*/
+
     //Vuln
     case "circl":
         url = "https://cve.circl.lu/cve/"+artifact;
