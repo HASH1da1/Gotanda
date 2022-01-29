@@ -79,13 +79,6 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
-    "id":"fofa",
-    "title":"FOFA IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
-
-chrome.contextMenus.create({
     "id":"virustotal",
     "title":"VirusTotal IP",
     "contexts":["selection", "link"],
@@ -140,12 +133,6 @@ chrome.contextMenus.create({
     "parentId": "IPv4"
 });
 
-chrome.contextMenus.create({
-    "id":"fofa",
-    "title":"FOFA IP",
-    "contexts":["selection", "link"],
-    "parentId": "IPv4"
-});
 
 chrome.contextMenus.create({
     "id":"virustotal",
@@ -785,10 +772,6 @@ switch (info.menuItemId){
     
     case "shodan":
         url = "https://www.shodan.io/host/"+artifact;
-        break;
-    
-    case "fofa":
-        url = "https://fofa.so/result?qbase64="+window.btoa(artifact);
         break;
 
     case "virustotal":
