@@ -767,7 +767,7 @@ switch (info.menuItemId){
         break;
     
     case "censys IP":
-        url = "https://censys.io/ipv4/"+artifact;
+        url = "https://search.censys.io/hosts/"+artifact;
         break;
     
     case "shodan":
@@ -823,7 +823,7 @@ switch (info.menuItemId){
     //Domain
 
     case "censys Domain":
-        url = "https://censys.io/domain?q="+artifact;
+        url = "https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q="+artifact;
         break;
     
     case "shodan Domain":
