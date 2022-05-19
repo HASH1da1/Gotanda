@@ -12,7 +12,6 @@
     },
     "permissions": [
         "contextMenus",
-        "tabs",
         "background"
     ]
 }
