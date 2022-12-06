@@ -65,6 +65,13 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.create({
+    "id":"criminalip",
+    "title":"Criminalip IP",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
+});
+
+chrome.contextMenus.create({
     "id":"censys IP",
     "title":"Censys",
     "contexts":["selection", "link"],
@@ -115,6 +122,13 @@ chrome.contextMenus.create({
 chrome.contextMenus.create({
     "id":"hackertarget IP",
     "title":"HackerTarget",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
+});
+
+chrome.contextMenus.create({
+    "id":"criminalip",
+    "title":"Criminalip IP",
     "contexts":["selection", "link"],
     "parentId": "IPv4"
 });
@@ -262,6 +276,12 @@ chrome.contextMenus.create({
     "contexts":["selection", "link"]
 });
 
+chrome.contextMenus.create({
+    "id":"criminalip",
+    "title":"Criminalip IP",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
+});
 
 chrome.contextMenus.create({
     "id":"censys Domain",
@@ -303,6 +323,13 @@ chrome.contextMenus.create({
     "title": "ThreatCrowd Domain",
     "contexts": ["selection", "link"],
     "parentId": "domain",
+});
+
+chrome.contextMenus.create({
+    "id":"criminalip",
+    "title":"Criminalip IP",
+    "contexts":["selection", "link"],
+    "parentId": "IPv4"
 });
 
 chrome.contextMenus.create({
@@ -765,7 +792,11 @@ switch (info.menuItemId){
     case "hackertarget IP":
         url = "https://api.hackertarget.com/reverseiplookup/?q="+artifact;
         break;
-    
+        
+    case "criminalip IP":
+        url = "https://api.criminalip.io/v1/ip/data?ip="+artifact+"&full=true";
+        break;
+        
     case "censys IP":
         url = "https://search.censys.io/hosts/"+artifact;
         break;
@@ -821,7 +852,10 @@ switch (info.menuItemId){
     
         
     //Domain
-
+    case "criminalip Domain":
+        url = "https://api.criminalip.io/v1/domain/scan="+artifact;
+        break;
+        
     case "censys Domain":
         url = "https://search.censys.io/search?resource=hosts&sort=RELEVANCE&per_page=25&virtual_hosts=EXCLUDE&q="+artifact;
         break;
