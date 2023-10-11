@@ -764,6 +764,10 @@ switch (info.menuItemId){
         url = "https://whoisds.com/whois-lookup/lookup?domain="+artifact;
         break;
 
+    case "whoisfreaks whois":
+        url = "https://whoisfreaks.com/tools/whois/lookup/"+artifact;
+        break;
+
     //IPv4
     case "abuseIPDB":
         url = "https://www.abuseipdb.com/check/"+artifact;
