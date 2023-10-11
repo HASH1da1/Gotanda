@@ -25,6 +25,7 @@ When You want to search using some engine, You choose one of list.
 |Domain Tools|https://whois.domaintools.com/|whois Lookup|
 |Security Trails|https://securitytrails.com/|whois lookup|
 |whoisds|https://whoisds.com/|whois lookup|
+|whoisfreaks|https://whoisfreaks.com/tools/whois/lookup/|whois lookup|
 |ThreatCrowd|https://www.threatcrowd.org/|Domain, IPv4|
 |AbuseIPDB|https://www.abuseipdb.com/|IPv4|
 |HackerTarget|https://hackertarget.com/|IPv4|

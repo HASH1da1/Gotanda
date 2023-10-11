@@ -35,6 +35,13 @@ chrome.contextMenus.create({
     "parentId": "whois"
 });
 
+chrome.contextMenus.create({
+    "id": "whoisfreaks whois",
+    "title": "whoisfreaks",
+    "contexts":["selection", "link"],
+    "parentId": "whois"
+})
+
 // create IP address context menus
 
 chrome.contextMenus.create({
@@ -755,6 +762,10 @@ switch (info.menuItemId){
 
     case "whoisds":
         url = "https://whoisds.com/whois-lookup/lookup?domain="+artifact;
+        break;
+
+    case "whoisfreaks whois":
+        url = "https://whoisfreaks.com/tools/whois/lookup/"+artifact;
         break;
 
     //IPv4
