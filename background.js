@@ -35,6 +35,13 @@ chrome.contextMenus.create({
     "parentId": "whois"
 });
 
+chrome.contextMenus.create({
+    "id": "whoisfreaks whois",
+    "title": "whoisfreaks",
+    "contexts":["selection", "link"],
+    "parentId": "whois"
+})
+
 // create IP address context menus
 
 chrome.contextMenus.create({
